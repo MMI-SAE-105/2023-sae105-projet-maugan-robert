@@ -12,36 +12,38 @@
 <body>
     <header class="header header--home">
         <a class="header__logo-link" href="/">
-            <img class="header__logo" src="/public/icon/logo site.png" alt="logosite" />
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
         </a>
         <h1 class="header__title header__title--home">MARKOREL</h1>
 
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone du menu.png" alt="">
+            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
         </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
-            <ul menu__ul>
-                <div class="first__item">
+
+            <div class="first__item">
+                <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
                     <li class="menu__item"><a class="menu__link" href="citation.html">LE REVE DE MARC-AURÈLE</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a>
-                    </li>
-                </div>
-                <div class="second__item">
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                </ul>
+            </div>
+            <div class="second__item">
+                <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
                     <li class="menu__item"><a class="menu__link" href="apropos.html">A PROPOS</a></li>
                     <li class="menu__item"><a class="menu__link" href="autresprojets.html">AUTRES PROJETS</a></li>
-                </div>
-            </ul>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
         <section class="header__main">
-            <h1>Marc-Aurèle avait un rêve, ce rêve s'appelait Rome</h1>
-            <img class="img__accueil" src="/public/img/image du film.webp" alt="">
+            <h2>Marc-Aurèle avait un rêve, ce rêve s'appelait Rome</h2>
+            <img class="img__accueil" src="/public/img/image_film.webp" alt="">
             <h3 class="title__p">Bienvenue sur Markorel</h3>
             <p class="p__home">Découvrez l'épopée inoubliable de Maximus dans le cœur
                 de la Rome antique. Plongez au cœur des arènes, explorez les secrets
@@ -92,18 +94,20 @@
     </main>
     <footer>
         <div class="first__footer">
-            <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
-            <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
-            <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+            <ul>
+                <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
+                <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+            </ul>
         </div>
         <div class="second__footer">
             <p class="footer__name">Maugan Robert A2</p>
             <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
             <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a href="">MMi
                     Montbéliard.</a></p>
-            <img class="footer__logo" src="/public/icon/logo insta.png" alt="">
-            <img class="footer__logo" src="/public/icon/logo youtube.png" alt="">
-            <img class="footer__logo" src="/public/icon/logo mmi.png" alt="">
+            <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
+            <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
+            <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
         </div>
     </footer>
 </body>
