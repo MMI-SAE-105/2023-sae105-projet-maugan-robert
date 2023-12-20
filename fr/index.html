@@ -4,9 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Markorel</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body>
-    <p>Test</p>
+        <header class="header header--home">
+            <a class="header__logo-link" href="/">
+                <img
+                  class="header__logo"
+                  src="/public/icon/logo site.png"
+                  alt="logosite"
+                />
+              </a>
+              <h1 class="header__title header__title--home">MARKOREL</h1> 
+                
+              <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+              <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone croix.png" alt="">
+              <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone du menu.png" alt="">
+            </button> 
+              <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+                <ul menu__ul>
+                <div class="first__item">
+                  <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                  <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
+                  <li class="menu__item"><a class="menu__link" href="citation.html">LE REVE DE MARC-AURÈLE</a></li>
+                  <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
+                  <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                </div>
+                <div class="second__item">
+                    <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
+                  <li class="menu__item"><a class="menu__link" href="apropos.html">A PROPOS</a></li>
+                  <li class="menu__item"><a class="menu__link" href="autresprojets.html">AUTRES PROJETS</a></li>
+                </div>
+                </ul>
+              </nav>
+        </header>
+        <main>
+            <section class="header__main">
+            <h1>Marc-Aurèle avait un rêve, ce rêve s'appelait Rome</h1>
+            <img class="img__accueil" src="/public/img/image du film.webp" alt="">
+            <h3 class="title__p">Bienvenue sur Markorel</h3>
+            <p class="p__home">Découvrez l'épopée inoubliable de Maximus dans le cœur 
+                de la Rome antique. Plongez au cœur des arènes, explorez les secrets 
+                de la création de Gladiator, et comprenez la légendaire citation de 
+                l'empereur Marcus Aurelius qui a marqué l'histoire du cinéma.</p>
+        </section>
+        <section class="teaser__article">
+            <div class="vignette__article">
+                <h4 class="title__vignette">GLADIATOR</h4>
+                <p class="p__vignette">Gladiator est l'un des plus grand films de l'histoire, mais son 
+                    thème est plus profond que vous ne le pensez…</p>
+                <button class="btn__vignette">LIRE L'ARTICLE</button>
+                <img class="img__vignette" src="/public/img/vignettefilm.webp" alt="">
+            </div>
+            <div class="vignette__article">
+                <h4 class="title__vignette">RIDLEY SCOTT</h4>
+                <p class="p__vignette">Ridley Scott est l'un des meilleurs réalisateur 
+                    au monde, venez découvrir son succès 
+                    et son histoire...</p>
+                <button class="btn__vignette">LIRE L'ARTICLE</button>
+                <img class="img__vignette" src="/public/img/vignetterea.webp" alt="">
+            </div>
+            <div class="vignette__article">
+                <h4 class="title__vignette">LE RÊVE DE 
+                    MARC-AURÈLE</h4>
+                <p class="p__vignette">Découvrez le sens profond de la citation légendaire 
+                    de Marc-Aurèle…</p>
+                <button class="btn__vignette">LIRE L'ARTICLE</button>
+                <img class="img__vignette" src="/public/img/vignettecita.webp" alt="">
+            </div>
+            <div class="vignette__article">
+                <h4 class="title__vignette">LA PENSÉE DE 
+                    MARC-AURÈLE</h4>
+                <p class="p__vignette">Apprenez en plus sur la pensée de Marc-Aurèle et 
+                    menez une vie meilleure…</p>
+                <button class="btn__vignette">LIRE L'ARTICLE</button>
+                <img class="img__vignette" src="/public/img/vignettelivre.webp" alt="">
+            </div>
+            <div class="vignette__article">
+                <h4 class="title__vignette">LA MASTERCLASS
+                    DE HANS ZIMMER</h4>
+                <p class="p__vignette">Découvrez les secrets de la fabuleuse musique 
+                    de Hans Zimmer "Now we are free"…</p>
+                <button class="btn__vignette">LIRE L'ARTICLE</button>
+                <img class="img__vignette" src="/public/img/vignettemusic.webp" alt="">
+            </div>
+        </section>
+        </main>
+        <footer>
+            <div class="first__footer">
+                <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
+                <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+            </div>
+            <div class="second__footer">
+                <p class="footer__name">Maugan Robert A2</p>
+                <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
+                <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a href="">MMi Montbéliard.</a></p>
+                <img class="footer__logo" src="/public/icon/logo insta.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo youtube.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo mmi.png" alt="">
+            </div>
+        </footer>
     
+      
 </body>
 </html>
