@@ -1,0 +1,51 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--bleu-sombre);
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  .header__menuBtn{
+    position:relative;
+    z-index: 10;
+    background: transparent; 
+    width: 50px;
+    border: none;
+  }
+  .noscroll,
+  .noscroll body {
+  overflow: hidden;
+  }
+  
+  .menu__link {
+    text-decoration: none;
+    color: inherit;
+    color: var(--blanc);
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  .menu__item {
+    list-style: none;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-right: 37px;
+  
+  }
+  
+  .back__menu {
+    position:relative;
+    z-index: 10;
+    background: transparent; 
+    width: 20px;
+    border: none;
+  }

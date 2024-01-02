@@ -1,0 +1,29 @@
+header {
+    background-color: var(--noir);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.header__logo {
+    width: 60px;
+    padding-left: 10px;
+}
+
+.header__title {
+    font-style: 0.88rem;
+    text-align: center;
+    color: var(--beige);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:var(12px) ;
+    
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}   
