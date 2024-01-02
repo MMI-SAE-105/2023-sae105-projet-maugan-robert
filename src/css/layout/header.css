@@ -9,16 +9,17 @@ header {
 }
 
 .header__logo {
-    width: 60px;
+    width: 80px;
     padding-left: 10px;
+    background-color: var(--noir);
 }
 
 .header__title {
-    font-style: 0.88rem;
+    font-size: 25px;
     text-align: center;
     color: var(--beige);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size:var(12px) ;
+    padding-left: 40px;
     
 }
 
@@ -29,6 +30,5 @@ body, html {
 }   
 
 .logo__langue {
-    width: 30px;
-    padding-right: 10px;
+    width: 20px;
 }

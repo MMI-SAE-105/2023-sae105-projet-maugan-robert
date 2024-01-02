@@ -14,10 +14,12 @@
   .header__menuBtn{
     position:relative;
     z-index: 10;
-    background: transparent; 
-    width: 50px;
+    background: transparent;
+    text-decoration: none; 
+    width: 80px;
     border: none;
   }
+
   .noscroll,
   .noscroll body {
   overflow: hidden;
