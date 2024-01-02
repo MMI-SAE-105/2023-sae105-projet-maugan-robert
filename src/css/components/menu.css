@@ -29,6 +29,7 @@
     color: var(--blanc);
     font-size: 18px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: left;
   }
   
   .menu__item {

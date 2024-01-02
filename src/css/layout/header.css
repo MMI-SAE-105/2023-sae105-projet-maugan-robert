@@ -27,3 +27,8 @@ body, html {
     padding: 0;
     box-sizing: border-box;
 }   
+
+.logo__langue {
+    width: 30px;
+    padding-right: 10px;
+}
