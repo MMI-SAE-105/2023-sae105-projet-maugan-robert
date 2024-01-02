@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autres projets</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header class="header header--home">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
+        </a>
+        <h1 class="header__title header__title--home">MARKOREL</h1>
+        <img class="logo__langue" src="/public/icon/eng.png" alt="logo__anglais">
+
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+            <div class="first__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="citation.html">LE REVE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                </ul>
+            </div>
+            <div class="second__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">A PROPOS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">AUTRES PROJETS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+        <main>
+            <h2>Autres Projets</h2>
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetfabian.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"OppenInsights"</p>
+                <p class="vignette__nom">Fabian Invernizzi</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetbobel.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"Oppeinheimer"</p>
+                <p class="vignette__nom">Banjamin Bobel</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetgautier.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"Morpalm"</p>
+                <p class="vignette__nom">Gautier Vicat</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetyaro.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"All the bright precious things..."</p>
+                <p class="vignette__nom">Yaroslav Yermakov</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetnatan.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"Culture of I am Legend"</p>
+                <p class="vignette__nom">Natan Brayet-Conche</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetaxel.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"Histoire de la 7ème Cie"</p>
+                <p class="vignette__nom">Axel Dutrieux</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetvictor.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"La vie de forrest"</p>
+                <p class="vignette__nom">Victor Landwerlin</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetnathan.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"Inception"</p>
+                <p class="vignette__nom">Nathan Schwarz</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetmarco.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"Blade Scroller"</p>
+                <p class="vignette__nom">Marco Poilbois</p>
+            </div>
+            </div>
+
+            <div class="vignette">
+                <img class="vignette__img" src="/public/img/projetkentin.webp" alt="projetsethan">
+                <div class="vignette__txt">
+                <p class="vignette__projet">"Underrated"</p>
+                <p class="vignette__nom">Kentin Martel</p>
+            </div>
+            </div>
+
+        </main>
+    <footer>
+        <div class="first__footer">
+            <ul>
+                <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
+                <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+            </ul>
+        </div>
+        <div class="second__footer">
+            <p class="footer__name">Maugan Robert A2</p>
+            <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
+            <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a href="">MMi
+                    Montbéliard.</a></p>
+            <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
+            <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
+            <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+        </div>
+    </footer>
+</body>
+</html>
