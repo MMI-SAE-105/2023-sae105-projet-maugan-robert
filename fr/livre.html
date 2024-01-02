@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livre</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header class="header header--home">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
+        </a>
+        <h1 class="header__title header__title--home">MARKOREL</h1>
+        <img class="logo__langue" src="/public/icon/eng.png" alt="logo__anglais">
+
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+            <div class="first__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="citation.html">LE REVE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                </ul>
+            </div>
+            <div class="second__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">A PROPOS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">AUTRES PROJETS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="article__header">
+        <h1 class="big__title">« Pensée pour Moi-Même »</h1>
+        <h2 class="second__title">Un Guide Éternel de Sagesse Personnelle</h2>
+        <p class="article__intro">Dans l'univers de la philosophie stoïcienne, 
+            le livre "Pensée pour Moi-Même" de Marc-Aurèle brille comme une étoile 
+            lumineuse. Marc-Aurèle, empereur romain et philosophe stoïcien, 
+            a écrit ces méditations au IIe siècle, et elles résonnent encore 
+            aujourd'hui comme un guide intemporel pour une vie équilibrée et 
+            épanouissante. Dans cet article, nous allons explorer les enseignements 
+            précieux contenus dans ce chef-d'œuvre de la philosophie.</p>
+        <p class="blog">Publié le 11/01 par Maugan ROBERT Lecture : 2min</p>
+        </section>
+
+        <article class="article">
+            <img class="article__img" src="/public/img/livre1.webp" alt="film1">
+            <h3 class="article__title">Le Stoïcisme : Une Philosophie du Bien-Être</h3>
+            <p class="article__body">Le stoïcisme est une philosophie ancienne qui 
+                prône la vertu, la rationalité et la maîtrise de soi comme clés du 
+                bien-être. Marc-Aurèle, en tant qu'empereur, a été confronté à de 
+                nombreuses épreuves, et "Pensée pour Moi-Même" reflète ses réflexions 
+                profondes sur la façon de vivre une vie conforme à la sagesse stoïcienne.</p>
+
+            <h3 class="article__title">Leçon 1 : Le Contrôle sur Soi</h3>
+            <p class="article__body">
+                Dans son livre, Marc-Aurèle souligne l'importance de la maîtrise de soi. 
+                Il nous rappelle que nous ne pouvons pas contrôler les circonstances 
+                extérieures, mais nous avons le pouvoir de contrôler nos réactions et 
+                nos pensées. Cette sagesse nous aide à trouver la sérénité intérieure 
+                même dans les moments difficiles.</p>
+
+                <img class="article__img" src="/public/img/livre2.webp" alt="film2">
+            <h3 class="article__title">Leçon 2 : La Vertu comme Objectif Principal</h3>
+            <p class="article__body">
+                L'empereur philosophe insiste sur la valeur de la vertu. 
+                Selon lui, le but ultime de la vie est de cultiver la 
+                sagesse, la justice, la tempérance et le courage. En suivant ces valeurs, 
+                nous pouvons nous rapprocher de l'eudaimonia*, un état de bien-être et de 
+                réalisation personnelle.</p>
+
+            <h3 class="article__title">Leçon 3 : L'Impermanence de la Vie</h3>
+            <p class="article__body">
+                Marc-Aurèle nous rappelle constamment l'impermanence de la vie. 
+                Il souligne que tout ce qui existe est éphémère, y compris les 
+                plaisirs et les peines. Cette prise de conscience nous invite à 
+                vivre l'instant présent et à apprécier chaque moment.</p>
+
+            <img class="article__img" src="/public/img/livre3.webp" alt="film3">
+            <h3 class="article__title">Un Trésor de Sagesse</h3>
+            <p class="article__body">En conclusion, "Pensée pour Moi-Même" de Marc-Aurèle est bien 
+                plus qu'un simple livre de philosophie. C'est un guide intemporel qui nous rappelle
+                 les valeurs essentielles du stoïcisme et nous encourage à vivre une vie de vertu, 
+                 de maîtrise de soi et de sagesse. Les leçons de Marc-Aurèle restent pertinentes
+                  aujourd'hui, offrant un phare pour ceux qui cherchent la sérénité et la 
+                  réalisation dans un monde en perpétuelle évolution. Ce livre est un trésor 
+                  de sagesse à découvrir et à méditer pour toute personne en quête de sens dans sa vie.</p>
+            </article>
+            <section class="frise">
+                <h2 class="partie__title">LIVRES SIMILAIRES</h2>
+
+            <div class="vignette__livre">
+                <img class="livre__img" src="/public/img/vieheureuse.webp" alt="seneque">
+                <p class="livre__title">“La vie heureuse”</p>
+                <p class="livre__autor">Sénèque</p>
+                <p class="livre__date">58 après J-C</p>
+            </div>
+
+            <div class="vignette__livre">
+                <img class="livre__img" src="/public/img/essais.webp" alt="seneque">
+                <p class="livre__title">“Essais”</p>
+                <p class="livre__autor">Michel de Montaigne</p>
+                <p class="livre__date">1580</p>
+            </div>
+
+            <div class="vignette__livre">
+                <img class="livre__img" src="/public/img/siddhartha.webp" alt="seneque">
+                <p class="livre__title">“Siddhartha”</p>
+                <p class="livre__autor">Herman Hesse</p>
+                <p class="livre__date">1922</p>
+            </div>
+
+            <div class="vignette__livre">
+                <img class="livre__img" src="/public/img/alchimiste.webp" alt="seneque">
+                <p class="livre__title">“L'alchimiste”</p>
+                <p class="livre__autor">Paulo Coelho</p>
+                <p class="livre__date">1988</p>
+            </div>
+
+            <div class="vignette__livre">
+                <img class="livre__img" src="/public/img/momentpresent.webp" alt="seneque">
+                <p class="livre__title">“Le pouvoir du moment présent”</p>
+                <p class="livre__autor">Eckhart Tolle</p>
+                <p class="livre__date">1997</p>
+            </div>
+
+            <div class="vignette__livre">
+                <img class="livre__img" src="/public/img/confucius.webp" alt="seneque">
+                <p class="livre__title">“Le Bonheur selon confucius”</p>
+                <p class="livre__autor">Yu Dan</p>
+                <p class="livre__date">2009</p>
+            </div>
+
+            </section>
+            <section class="glossaire">
+                <h2 class="partie__title">GLOSSAIRE</h2>
+                <p class="glossaire__body"><strong>Cinéphile :</strong> Un cinéphile est une personne qui a 
+                une passion et un amour profond pour le cinéma.</p>
+                
+                <p class="glossaire__body"><strong>Une dystopie :</strong> genre littéraire, cinématographique ou artistique 
+                    qui décrit une société imaginaire ou un monde futur où les conditions de vie 
+                    sont extrêmement difficiles</p>
+                
+                <p class="glossaire__body"><strong>Eudaimonia :</strong> terme philosophique d'origine grecque, 
+                    généralement traduit par "bien-être" ou "bonheur complet."</p>
+            </section>
+        </main>
+        <footer>
+            <div class="first__footer">
+                <ul>
+                    <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                    <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
+                    <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+                </ul>
+            </div>
+            <div class="second__footer">
+                <p class="footer__name">Maugan Robert A2</p>
+                <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
+                <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a href="">MMi
+                        Montbéliard.</a></p>
+                <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+            </div>
+        </footer>
+    </body>
+    </html>
