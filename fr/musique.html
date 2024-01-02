@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musique</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header class="header header--home">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
+        </a>
+        <h1 class="header__title header__title--home">MARKOREL</h1>
+        <img class="logo__langue" src="/public/icon/eng.png" alt="logo__anglais">
+
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+            <div class="first__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="citation.html">LE REVE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                </ul>
+            </div>
+            <div class="second__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">A PROPOS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">AUTRES PROJETS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="article__header">
+        <h1 class="big__title">La Mélodie Envoûtante</h1>
+        <h2 class="second__title">"Now We Are Free"</h2>
+        <p class="article__intro">Dans l'univers cinématographique, la musique a 
+            le pouvoir de captiver les émotions et de laisser une trace durable. 
+            La composition de Hans Zimmer, "Now We Are Free," tirée du film Gladiator, 
+            incarne parfaitement cette magie musicale. Cette mélodie ensorcelante 
+            transcende le temps et l'espace, créant une expérience sonore gravée 
+            dans nos mémoires. Cet article explore l'origine de cette musique, 
+            son rôle dans le film, et sa résonance continue dans nos vies.</p>
+        <p class="blog">Publié le 11/01 par Maugan ROBERT Lecture : 2min</p>
+        </section>
+
+        <article class="article">
+            <img class="article__img" src="/public/img/music1.webp" alt="film1">
+            <h3 class="article__title">Une Ouverture Captivante</h3>
+            <p class="article__body">Lorsque Ridley Scott a dévoilé Gladiator en 2000, 
+                il nous a offert un chef-d'œuvre épique, accompagné d'une partition 
+                musicale tout aussi grandiose. "Now We Are Free," composée par le 
+                légendaire Hans Zimmer, est un hymne d'une beauté envoûtante. 
+                Cette mélodie délicate et émotionnelle se déploie tout au long 
+                du film, créant une toile sonore évoquant la grandeur, 
+                la tristesse, et l'espoir.</p>
+
+            <h3 class="article__title">Le Voyage de Maximus</h3>
+            <p class="article__body">
+                <a href="film.html">"Now We Are Free" est intimement liée au personnage de 
+                    Maximus, interprété par Russell Crowe. La mélodie exprime sa quête de 
+                    liberté, de rédemption, et d'amour. Elle accompagne Maximus tout au 
+                    long de son périple tragique, intensifiant les émotions à l'écran et
+                     ajoutant une dimension supplémentaire à l'histoire.</p>
+
+                <img class="article__img" src="/public/img/music2.webp" alt="film2">
+            <h3 class="article__title">Une Résonance Émotionnelle</h3>
+            <p class="article__body">
+                La musique transcende les barrières linguistiques et culturelles, 
+                et "Now We Are Free" en est un exemple éloquent. La chanteuse 
+                Lisa Gerrard chante dans une langue qu’elle a créé. 
+                Les harmonies envoûtantes et sa voix éthérée résonnent 
+                auprès du public, évoquant un éventail d'émotions, 
+                de la mélancolie à l'inspiration. La composition 
+                de Hans Zimmer devient un personnage à part entière
+                 dans le film, fusionnant harmonieusement avec 
+                 l'ensemble de l'œuvre cinématographique.</p>
+
+            <h3 class="article__title">Un Héritage Durable</h3>
+            <p class="article__body">
+                Depuis la sortie de Gladiator, 
+                "Now We Are Free" a pris vie en dehors du film. Elle a été reprise par 
+                de nombreux artistes et est devenue une favorite lors de concerts et de 
+                cérémonies importantes. Cette mélodie a touché les cœurs du monde entier
+                 et continue d'inspirer de nouvelles générations d'auditeurs.</p>
+
+            <img class="article__img" src="/public/img/music3.webp" alt="film3">
+            <h3 class="article__title">Le pouvoir de la musique</h3>
+            <p class="article__body">En conclusion, la musique possède le pouvoir 
+                transcendant de franchir les barrières du temps et de l'espace, et 
+                "Now We Are Free" de Hans Zimmer dans Gladiator en est un exemple 
+                remarquable. Cette mélodie envoûtante continue de nous captiver et 
+                de nous émouvoir, même des années après sa création. Elle témoigne
+                 du génie musical d'Hans Zimmer et de l'impact profond que la musique 
+                 peut avoir sur nos vies.</p>
+
+            </article>
+            <section class="glossaire">
+                <h2 class="partie__title">GLOSSAIRE</h2>
+                <p class="glossaire__body"><strong>Cinéphile :</strong> Un cinéphile est une personne qui a 
+                une passion et un amour profond pour le cinéma.</p>
+                
+                <p class="glossaire__body"><strong>Une dystopie :</strong> genre littéraire, cinématographique ou artistique 
+                    qui décrit une société imaginaire ou un monde futur où les conditions de vie 
+                    sont extrêmement difficiles</p>
+                
+                <p class="glossaire__body"><strong>Eudaimonia :</strong> terme philosophique d'origine grecque, 
+                    généralement traduit par "bien-être" ou "bonheur complet."</p>
+            </section>
+        </main>
+        <footer>
+            <div class="first__footer">
+                <ul>
+                    <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                    <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
+                    <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+                </ul>
+            </div>
+            <div class="second__footer">
+                <p class="footer__name">Maugan Robert A2</p>
+                <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
+                <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a href="">MMi
+                        Montbéliard.</a></p>
+                <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+            </div>
+        </footer>
+    </body>
+    </html>
