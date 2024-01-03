@@ -1,4 +1,5 @@
 @import "utils/variable.css";
 @import "layout/header.css";
 @import "components/menu.css";
-@import "base/main.css"
+@import "base/main.css";
+@import "layout/footer.css";
