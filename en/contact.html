@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header header--home">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
+        </a>
+        <h1 class="header__title header__title--home">MARKOREL</h1>
+        <img class="logo__langue" src="/public/icon/france.png" alt="logo__anglais">
+
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+            <div class="first__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="citation.html">THE DREAM OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">THE THOUGHTS OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">THE HANS ZIMMER'S MASTERCLASS</a></li>
+                </ul>
+            </div>
+            <div class="second__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">ABOUT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">OTHER PROJECTS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contact">
+        <h2>Contact Form</h2>
+    <div>
+        <p class="label__title">First-name</p>
+        <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom ici">
+      </div>
+
+      <div>
+        <p class="label__title">Name</p>
+        <input type="text" name="nom" id="nom" placeholder="Entrez votre nom ici">
+      </div>
+
+      <div>
+        <p class="label__title">Mail</p>
+        <input type="text" name="e-mail" id="e-mail" placeholder="Entrez votre e-mail ici">
+      </div>
+
+      <div>
+        <p class="label__title">Object</p>
+        <input type="text" name="objet" id="objet" placeholder="Entrez l'objet du message ici">
+      </div>
+
+      <div>
+        <p class="label__title">Message</p>
+        <textarea id="message" name="message" rows="5" placeholder="Entrez votre message ici"></textarea>
+      </div>
+
+      <button class="contact_btn">SEND</button>
+</section>
+<footer>
+    <div class="first__footer">
+        <ul>
+            <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+            <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
+            <li class="footer__item"><a class="footer__link" href="autresprojets.html">Other projects</a></li>
+        </ul>
+    </div>
+    <div class="second__footer">
+        <p class="footer__name">Maugan Robert A2</p>
+        <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
+        <p class="footer__info">Project carried out as part of an educational exercise in the department <a class="footer__mmi" href="">MMi
+                Montbéliard.</a></p>
+        <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
+        <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
+        <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+    </div>
+</footer>
+    
+</body>
+</html>

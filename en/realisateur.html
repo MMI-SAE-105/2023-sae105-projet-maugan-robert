@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réalisateur</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+
+<body>
+    <header class="header header--home">
+        <a class="header__logo-link" href="/">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
+        </a>
+        <h1 class="header__title header__title--home">MARKOREL</h1>
+        <img class="logo__langue" src="/public/icon/eng.png" alt="logo__anglais">
+
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
+        </button>
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
+            <div class="first__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="citation.html">LE REVE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                </ul>
+            </div>
+            <div class="second__item">
+                <ul class="menu__ul">
+                    <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">A PROPOS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">AUTRES PROJETS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="article__header">
+        <h1 class="big__title">RIDLEY SCOTT</h1>
+        <h2 class="second__title">L'Artiste du Cinéma</h2>
+        <p class="article__intro">Ridley Scott est un nom qui brille de mille feux dans 
+            l'univers cinématographique depuis plusieurs décennies. Ce réalisateur britannique
+             a conquis le monde du cinéma grâce à son talent exceptionnel. Dans cet article, 
+             nous allons plonger dans l'histoire de Ridley Scott, de ses débuts modestes à 
+             ses films emblématiques qui continuent de captiver le public.</p>
+        <p class="blog">Publié le 11/01 par Maugan ROBERT Lecture : 2min</p>
+        </section>
+
+        <article class="article">
+            <img class="article__img" src="/public/img/rea1.webp" alt="film1">
+            <h3 class="article__title">Débuts Modestes, Créativité Débordante</h3>
+            <p class="article__body">Ridley Scott est né le 30 novembre 1937 dans le. comté de Tyne and 
+                Wear, en Angleterre. Il a commencé sa carrière dans la publicité, mais sa passion pour 
+                la narration visuelle l'a rapidement conduit vers le monde du cinéma. Après avoir étudié 
+                à la Royal College of Art de Londres, il a réalisé son premier long métrage, 
+                "Les Duellistes", en 1977, un film historique acclamé par la critique.</p>
+
+            <h3 class="article__title">"Alien" : Un Chef-d’œuvre de Science-Fiction</h3>
+            <p class="article__body">En 1979, Ridley Scott a marqué un tournant décisif avec la 
+                sortie de "Alien, le huitième passager". Ce film d'horreur spatial est devenu 
+                un classique instantané, révolutionnant le genre de la science-fiction. 
+                L'esthétique innovante et l'atmosphère terrifiante du film ont ouvert de 
+                nouvelles perspectives pour le cinéma de genre.</p>
+
+                <img class="article__img" src="/public/img/rea2.webp" alt="film2">
+            <h3 class="article__title">"Blade Runner" : L'univers Cyberpunk</h3>
+            <p class="article__body">En 1982, Ridley Scott a réalisé "Blade Runner", un film de 
+                science-fiction visionnaire. Cette œuvre cyberpunk a redéfini les standards du 
+                genre. L'univers dystopique* et les questions philosophiques soulevées par le 
+                film ont profondément influencé la culture populaire.</p>
+
+            <h3 class="article__title">"Gladiator" : L'Épopée Romaine</h3>
+            <p class="article__body"> En 2000, Ridley Scott a dirigé "Gladiator",
+                 un film épique qui a marqué les esprits. Avec Russell Crowe dans 
+                 le rôle principal, le film nous plonge dans l'ancienne Rome avec 
+                 des scènes de combat mémorables et une histoire de vengeance et de 
+                 rédemption poignante. "Gladiator" a remporté cinq Oscars, dont celui 
+                 du meilleur film, consacrant Ridley Scott comme un maître du cinéma.</p>
+
+            <img class="article__img" src="/public/img/rea3.webp" alt="film3">
+            <h3 class="article__title">Héritage Durable</h3>
+            <p class="article__body">La carrière de Ridley Scott est une source d'inspiration 
+                pour de nombreux réalisateurs aspirants. Son style visuel distinctif, 
+                sa narration captivante et sa capacité à créer des mondes cinématographiques
+                 uniques en font l'un des réalisateurs les plus influents de l'histoire du cinéma. 
+                 Avec une filmographie diversifiée, Ridley Scott continue d'émerveiller le public,
+                  laissant présager de futures créations tout aussi brillantes.</p>
+
+
+            <p class="article__body">En conclusion, Ridley Scott est un géant du cinéma, 
+                un artiste dont l'impact sur l'industrie cinématographique restera 
+                indélébile. De ses débuts modestes à ses films révolutionnaires, 
+                son héritage perdurera, et Ridley Scott demeure une figure emblématique 
+                du cinéma contemporain.</p>
+            </article>
+            <section class="glossaire">
+                <h2 class="partie__title">GLOSSAIRE</h2>
+                <p class="glossaire__body"><strong>Cinéphile :</strong> Un cinéphile est une personne qui a 
+                une passion et un amour profond pour le cinéma.</p>
+                
+                <p class="glossaire__body"><strong>Une dystopie :</strong> genre littéraire, cinématographique ou artistique 
+                    qui décrit une société imaginaire ou un monde futur où les conditions de vie 
+                    sont extrêmement difficiles</p>
+                
+                <p class="glossaire__body"><strong>Eudaimonia :</strong> terme philosophique d'origine grecque, 
+                    généralement traduit par "bien-être" ou "bonheur complet."</p>
+            </section>
+        </main>
+        <footer>
+            <div class="first__footer">
+                <ul>
+                    <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                    <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
+                    <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+                </ul>
+            </div>
+            <div class="second__footer">
+                <p class="footer__name">Maugan Robert A2</p>
+                <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
+                <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a href="">MMi
+                        Montbéliard.</a></p>
+                <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
+                <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+            </div>
+        </footer>
+    </body>
+    </html>
