@@ -11,6 +11,7 @@ header {
 .header__logo {
     width: 80px;
     padding-left: 10px;
+    filter: invert(1) hue-rotate(180deg);
 }
 
 .header__title {
