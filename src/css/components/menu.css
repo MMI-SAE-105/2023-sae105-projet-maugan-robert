@@ -11,14 +11,6 @@
     align-items: center; 
   }
   
-  .header__menuBtn{
-    position:relative;
-    z-index: 10;
-    background: transparent;
-    text-decoration: none; 
-    width: 80px;
-    border: none;
-  }
 
   .noscroll,
   .noscroll body {
