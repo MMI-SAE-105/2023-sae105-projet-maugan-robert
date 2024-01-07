@@ -1,7 +1,29 @@
 :root {
---noir: rgba(42, 46, 50, 1);
+--noir: rgb(29, 33, 34);
 --bleu-sombre: rgba(68, 88, 99, 1);
 --vert-gris: rgba(57, 77, 74, 1);
 --beige: rgba(230, 228, 215, 1);
 --blanc: rgba(255, 255, 255, 1);
+
+
+--georgia : 'Georgia', serif;
+--lora : 'Lora', serif;
+
+--body : 0.938rem;
+--site-title : 2rem;
+--page-title : 1.5rem;
+--txt-title : 1.125rem;
+--intro : 0.875rem; 
+
+
+--space-1 : 10px: 
+--space-2 : 20px;
+--space-3 : 30px;
+--space-4 : 40px;
+--space-5 : 50px;
+--space-6 : 60px;
+--space-7 : 70px;
+--space-8 : 80px;
+--space-9 : 90px;
+
 }
