@@ -32,8 +32,8 @@ header {
 
 .logo__langue {
     width: 25px;
-    order: 3;
-
+    order: 4;
+    padding: none;
 }
 
 .header__menuBtn{
@@ -44,11 +44,14 @@ header {
     width: 60px;
     padding-right: 10px;
     order: 4;
-    filter: invert(1);
   }
 
   .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.menu__burger {
+    filter: invert(1);
 }

@@ -15,10 +15,11 @@
             <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
         </a>
         <h1 class="header__title">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/eng.png" alt="logo__anglais">
+        <a href="/en/index.html"><img class="logo__langue" src="/public/icon/eng.png" alt="logo__anglais"></a>
 
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
             <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+            <img class="logo__menu" x-show="menuIsOpen" src="/public/icon/logo_site.png" alt="">
             <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
         </button>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">

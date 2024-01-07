@@ -7,8 +7,7 @@
     background: var(--bleu-sombre);
     display: flex;
     flex-direction: column;
-    justify-content: center; 
-    align-items: center; 
+    padding-top: 70px;
   }
   
 
@@ -21,26 +20,26 @@
     text-decoration: none;
     color: inherit;
     color: var(--blanc);
-    font-size: 18px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    font-family: var(--lora);
     text-align: left;
+    margin-bottom: 20px;
   }
   
-  .menu__item {
+  .menu__ul {
     list-style: none;
-    padding: 2rem;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    margin-right: 37px;
-  
+    text-align: left;
   }
   
   .back__menu {
     position:relative;
     z-index: 10;
     background: transparent; 
-    width: 20px;
+    width: 40px;
     border: none;
+    padding-top: 15px;
+    padding-right: 5px;
   }
