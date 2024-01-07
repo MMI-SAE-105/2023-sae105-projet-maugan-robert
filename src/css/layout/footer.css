@@ -1,3 +1,72 @@
 footer {
     background-color: var(--noir);
 }
+
+.footer__link {
+    font-size: 20px;
+    color: var(--beige);
+}
+
+.footer__item {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer__liens {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.footer__insta {
+    width: 40px;
+    height: 40px;
+    filter: invert(1)
+}
+
+.footer__youtube {
+    width: 60px;
+    height: 60px;
+    filter: invert(1)
+}
+
+.footer__mmi {
+    width: 50px;
+    height: 40px;
+}
+
+.logo__footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer__name {
+    font-size: 18px;
+    color: var(--beige);
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.first__footer {
+    border-bottom : solid 1px var(--beige);
+    border-bottom: opacity 0.5;
+}
+
+.footer__mail { 
+    color: var(--beige);
+    margin-left: 15px;
+}
+
+.footer__info {
+    font-family: var(--georgia);
+    margin-left: 15px;
+    color: var(--beige);
+}
+
+.footer__sitemmi {
+    color: var(--beige);
+}
