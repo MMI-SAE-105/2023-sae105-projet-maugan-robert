@@ -88,3 +88,16 @@ figure {
     width: 100%;
     height: auto;
 }
+
+figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--body);
+    font-family: var(--georgia);
+    font-size: 11px;
+    margin-top: 5px;
+    font-weight: 300;
+    color: var(--beige);
+    opacity: 0.6;
+}
