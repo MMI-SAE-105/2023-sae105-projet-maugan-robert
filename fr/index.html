@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -11,21 +11,21 @@
 
 <body>
     <header class="header header--home">
-        
+
         <a class="header__logo-link" href="/fr/index.html">
             <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
         </a>
         <h1 class="header__title">MARKOREL</h1>
         <div class="header__right">
-        <a class="logo__langue" href="/en/index.html"><img src="/public/icon/eng.png" alt="logo__anglais"></a>
+            <a class="logo__langue" href="/en/index.html"><img src="/public/icon/eng.png" alt="logo__anglais"></a>
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-           <div class="double__logo">
-            <img class="logo__menu" x-show="menuIsOpen" src="/public/icon/logo_site.png" alt="">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-        </div>
-        <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
-        </button>   
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <div class="double__logo">
+                    <img class="logo__menu" x-show="menuIsOpen" src="/public/icon/logo_site.png" alt="">
+                    <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                </div>
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
         </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
@@ -34,7 +34,8 @@
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
                     <li class="menu__item"><a class="menu__link" href="replique.html">LE REVE DE MARC-AURÈLE</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
-                    <li class="menu__item"><a class="menu__link" href="musique.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">LA MASTERCLASS DE HANS ZIMMER</a>
+                    </li>
                 </ul>
             </div>
             <div class="second__item">
@@ -49,7 +50,7 @@
     <main>
         <section class="header__main">
             <div class="color__blue">
-            <h2 class="site__title">"Marc-Aurèle avait un rêve, ce rêve s'appelait Rome"</h2>
+                <h2 class="site__title">"Marc-Aurèle avait un rêve, ce rêve s'appelait Rome"</h2>
             </div>
             <img class="img__accueil" src="/public/img/image du film.webp" alt="">
             <h3 class="title__p">Bienvenue sur Markorel</h3>
@@ -59,45 +60,72 @@
                 l'empereur Marcus Aurelius qui a marqué l'histoire du cinéma.</p>
         </section>
         <section class="teaser__article">
-            <div class="vignette__article">
-                <h4 class="title__vignette">GLADIATOR</h4>
-                <p class="p__vignette">Gladiator est l'un des plus grand films de l'histoire, mais son
-                    thème est plus profond que vous ne le pensez…</p>
-                <button class="btn__vignette">LIRE L'ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettefilm.webp" alt="">
+            <div class="vignette">
+                <div class="vignette__article">
+                    <h4 class="title__vignette">GLADIATOR</h4>
+                    <p class="p__vignette">Gladiator est l'un des plus grand films de l'histoire, mais son
+                        thème est plus profond que vous ne le pensez…</p>
+                    <button class="btn__vignette">LIRE L'ARTICLE</button>
+                </div>
+                <div class="div__img">
+                    <img class="img__vignette" src="/public/img/vignettefilm.webp" alt="">
+                </div>
             </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">RIDLEY SCOTT</h4>
-                <p class="p__vignette">Ridley Scott est l'un des meilleurs réalisateur
-                    au monde, venez découvrir son succès
-                    et son histoire...</p>
-                <button class="btn__vignette">LIRE L'ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignetterea.webp" alt="">
-            </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">LE RÊVE DE
-                    MARC-AURÈLE</h4>
-                <p class="p__vignette">Découvrez le sens profond de la citation légendaire
-                    de Marc-Aurèle…</p>
-                <button class="btn__vignette">LIRE L'ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettecita.webp" alt="">
-            </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">LA PENSÉE DE
-                    MARC-AURÈLE</h4>
-                <p class="p__vignette">Apprenez en plus sur la pensée de Marc-Aurèle et
-                    menez une vie meilleure…</p>
-                <button class="btn__vignette">LIRE L'ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettelivre.webp" alt="">
-            </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">LA MASTERCLASS
-                    DE HANS ZIMMER</h4>
-                <p class="p__vignette">Découvrez les secrets de la fabuleuse musique
-                    de Hans Zimmer "Now we are free"…</p>
-                <button class="btn__vignette">LIRE L'ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettemusic.webp" alt="">
-            </div>
+
+        
+                <div class="vignette">
+                    <div class="vignette__article">
+                        <h4 class="title__vignette">RIDLEY SCOTT</h4>
+                        <p class="p__vignette">Ridley Scott est l'un des meilleurs réalisateur
+                            au monde, venez découvrir son succès
+                            et son histoire...</p>
+                        <button class="btn__vignette">LIRE L'ARTICLE</button>
+                    </div>
+                    <div class="div__img">
+                        <img class="img__vignette" src="/public/img/vignetterea.webp" alt="">
+                    </div>
+                </div>
+
+
+                    <div class="vignette">
+                        <div class="vignette__article">
+                            <h4 class="title__vignette">LE RÊVE DE
+                                MARC-AURÈLE</h4>
+                            <p class="p__vignette">Découvrez le sens profond de la citation légendaire
+                                de Marc-Aurèle…</p>
+                            <button class="btn__vignette">LIRE L'ARTICLE</button>
+                        </div>
+                        <div class="div__img">
+                            <img class="img__vignette" src="/public/img/vignettecita.webp" alt="">
+                        </div>
+                    </div>
+
+    
+                        <div class="vignette">
+                            <div class="vignette__article">
+                                <h4 class="title__vignette">LA PENSÉE DE
+                                    MARC-AURÈLE</h4>
+                                <p class="p__vignette">Apprenez en plus sur la pensée de Marc-Aurèle et
+                                    menez une vie meilleure…</p>
+                                <button class="btn__vignette">LIRE L'ARTICLE</button>
+                            </div>
+                            <div class="div__img">
+                                <img class="img__vignette" src="/public/img/vignettelivre.webp" alt="">
+                            </div>
+                        </div>
+                    
+                            <div class="vignette">
+                                <div class="vignette__article">
+                                    <h4 class="title__vignette">LA MASTERCLASS
+                                        DE HANS ZIMMER</h4>
+                                    <p class="p__vignette">Découvrez les secrets de la fabuleuse musique
+                                        de Hans Zimmer "Now we are free"…</p>
+                                    <button class="btn__vignette">LIRE L'ARTICLE</button>
+                                </div>
+                                <div class="div__img">
+                                    <img class="img__vignette" src="/public/img/vignettemusic.webp" alt="">
+                                </div>
+                            </div>
         </section>
     </main>
     <footer>
@@ -111,13 +139,14 @@
         <div class="second__footer">
             <p class="footer__name">Maugan Robert A2</p>
             <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-            <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a class="footer__sitemmi" href=""> MMi
+            <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a
+                    class="footer__sitemmi" href=""> MMi
                     Montbéliard.</a></p>
-        <div class="logo__footer">
-            <img class="footer__insta" src="/public/icon/logo_insta.png" alt="">
-            <img class="footer__youtube" src="/public/icon/logo_youtube.png" alt="">
-            <img class="footer__mmi" src="/public/icon/logo_mmi.png" alt="">
-        </div>
+            <div class="logo__footer">
+                <img class="footer__insta" src="/public/icon/logo_insta.png" alt="">
+                <img class="footer__youtube" src="/public/icon/logo_youtube.png" alt="">
+                <img class="footer__mmi" src="/public/icon/logo_mmi.png" alt="">
+            </div>
         </div>
     </footer>
 </body>
