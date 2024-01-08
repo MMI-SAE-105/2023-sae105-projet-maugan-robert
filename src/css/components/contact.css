@@ -1,0 +1,34 @@
+.title__contact {
+    color: var (--noir);
+    font-family: var(--lora);
+    margin-left: 15px;
+}
+
+.contact__page {
+    background-color: var(--blanc);
+}
+
+.label__title {
+    font-family: var(--georgia);
+    margin-left: 15px;
+}
+
+input {
+    margin-left: 15px;
+    padding: 5% 50% 5% 2%;
+    border: solid 1px var(--noir);
+    margin-right: -15px;
+}
+
+
+textarea {
+    margin-left: 15px;
+    padding : 5% 53% 5% 2%;
+    border: solid 1px var(--noir);
+}
+
+input::placeholder {
+    padding-left: 10%;
+    padding-top: 10px;
+    line-height: 50px;
+}

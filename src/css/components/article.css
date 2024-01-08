@@ -39,6 +39,7 @@ body {
     font-style: italic;
     opacity: 0.9;
     margin-left: 15px;
+    margin-right: 10px;
     z-index: -1;
 }
 
@@ -53,12 +54,21 @@ body {
     z-index: -1;
 }
 
+.article__img {
+    max-width: 100%;
+    height: auto;
+}
+
+figure {
+    margin: 0% 0% 0% 0%;
+}
+
 
 
 .article__title {
     font-size: var(--txt-title);
     font-family: var(--lora);
-    font-weight: 700;
+    font-weight: 600;
     color: var(--beige);
     margin-top: 20px;
     margin-left: 15px;
