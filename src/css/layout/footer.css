@@ -4,7 +4,7 @@ footer {
 }
 
 .footer__link {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--beige);
     font-family: var(--georgia);
     margin-left: 12px;
@@ -24,20 +24,20 @@ footer {
 
 
 .footer__insta {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     filter: invert(1)
 }
 
 .footer__youtube {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     filter: invert(1)
 }
 
 .footer__mmi {
-    width: 50px;
-    height: 40px;
+    width: 40px;
+    height: 30px;
 }
 
 .logo__footer {
@@ -50,7 +50,7 @@ footer {
 }
 
 .footer__name {
-    font-size: 14px;
+    font-size: 13px;
     color: var(--beige);
     margin-top: 20px;
     margin-left: 15px;
@@ -66,17 +66,20 @@ footer {
 
 .footer__mail { 
     color: var(--beige);
-    margin-left: 12px;
+    margin-left: 15px;
     opacity: 0.7;
+    font-size: 13px;
 }
 
 .footer__info {
     font-family: var(--georgia);
-    margin-left: 12px;
+    margin-left: 15px;
     color: var(--beige);
     opacity: 0.7;
+    font-size: 13px;
 }
 
 .footer__sitemmi {
     color: var(--beige);
+    font-size: 11px;
 }
