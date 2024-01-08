@@ -6,8 +6,11 @@
 --blanc: rgba(255, 255, 255, 1);
 
 
---georgia : 'Georgian Regular';
---lora : 'Lora Regular';
+
+
+--garamond: 'EB Garamond', serif;
+--lora : 'Lora', serif; 
+--georgia : 'Noto Serif Georgian', serif;
 
 --body : 0.938rem;
 --site-title : 2rem;
