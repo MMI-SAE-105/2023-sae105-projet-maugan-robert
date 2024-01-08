@@ -16,7 +16,7 @@ header {
 }
 
 .header__logo {
-    width: 100px;
+    width: 80%;
     padding-left: 10px;
     filter: invert(1);
 }
@@ -30,7 +30,7 @@ header {
 }
 
 .logo__langue {
-    width: 20px;
+    width: 50%;
 }
 
 .header__menuBtn{
@@ -38,7 +38,7 @@ header {
     z-index: 10;
     background: transparent;
     border: none;
-    width: 50px;
+    width: 70%;
     padding-right: 10px;
   }
 
