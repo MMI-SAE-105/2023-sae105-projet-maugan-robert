@@ -3,13 +3,17 @@ footer {
 }
 
 .footer__link {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--beige);
+    font-family: var(--georgia);
+    margin-left: 12px;
 }
 
 .footer__item {
     list-style: none;
     margin-top: 10px;
+    align-self: flex-start;
+    margin-left: -37px;
 }
 
 .footer__liens {
@@ -45,25 +49,26 @@ footer {
 }
 
 .footer__name {
-    font-size: 18px;
+    font-size: 14px;
     color: var(--beige);
     margin-top: 20px;
     margin-left: 15px;
 }
 
 .first__footer {
-    border-bottom : solid 1px var(--beige);
+    border-bottom : solid 2px var(--beige);
     border-bottom: opacity 0.5;
+    width: 50%;
 }
 
 .footer__mail { 
     color: var(--beige);
-    margin-left: 15px;
+    margin-left: 12px;
 }
 
 .footer__info {
     font-family: var(--georgia);
-    margin-left: 15px;
+    margin-left: 12px;
     color: var(--beige);
 }
 
