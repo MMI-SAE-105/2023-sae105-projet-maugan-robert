@@ -14,11 +14,11 @@ html, body[data-page="film"] {
 }
 
 .title__p {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--beige);
     font-family: var(--lora);
     margin-left: 15px;
-    font-weight: 500;
+    font-weight: 600;
     margin-top: 40px;
 }
 
@@ -28,6 +28,9 @@ html, body[data-page="film"] {
     font-size: 15px;
     color: var(--beige);
     margin-top: 20px;
+    margin-bottom: -10px;
+    margin-right: 15px;
+    font-weight: 400;
 }
 
 .color__blue {
@@ -113,8 +116,6 @@ margin-right: 60px;
     margin-top: 10px; 
     margin-bottom: 20px;
 }
-
-
 
 .colise {
     z-index: -1;
