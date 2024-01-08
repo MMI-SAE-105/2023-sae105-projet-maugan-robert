@@ -30,7 +30,7 @@ header {
 }
 
 .logo__langue {
-    width: 50%;
+    width: 120%;
 }
 
 .header__menuBtn{
@@ -38,8 +38,8 @@ header {
     z-index: 10;
     background: transparent;
     border: none;
-    width: 60%;
     padding-right: 10px;
+    filter: invert(1);
   }
 
   .header {
@@ -48,8 +48,14 @@ header {
     align-items: center;
 }
 
-.menu__burger {
+.back__menu { 
+    position:relative;
+    z-index: 10;
     filter: invert(1);
+    width: 100%;
+    margin-right: 30px;
+    padding-right: 15px;
+    padding-bottom: 10px;
 }
 
 .header__right {
@@ -58,4 +64,8 @@ header {
     align-items: center;
     gap: 0.8rem;
     order: 3;
+}
+
+.menu__burger {
+    width: 40%;
 }
