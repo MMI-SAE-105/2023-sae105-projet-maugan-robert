@@ -21,6 +21,7 @@ body {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
+    margin-bottom: 10px;
 }
 
 .second__title {
@@ -81,4 +82,9 @@ figure {
 .lien__externe {
     font-size: var(--body);
     color: var(--beige);
+}
+
+.video {
+    width: 100%;
+    height: auto;
 }
