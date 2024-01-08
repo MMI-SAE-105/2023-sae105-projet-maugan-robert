@@ -6,6 +6,7 @@
     color: var(--beige);
     font-family: var(--georgia);
     font-weight: 300;
+    margin-bottom: 30px;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
     color: var(--beige);
     margin-top: 20px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .second__title {
@@ -28,16 +30,17 @@ body {
     color: var(--beige);
     margin-top: 10px;
     margin-left: 15px;
+    margin-right: 15px;
 }
 
 .article__intro {
     position: relative;
     font-size: var(--intro);
     font-family: var(--georgia);
-    font-weight: 200;
+    font-weight: 300;
     color: var(--beige);
     font-style: italic;
-    opacity: 0.9;
+    opacity: 0.8;
     margin-left: 15px;
     margin-right: 10px;
     z-index: -1;
@@ -52,6 +55,7 @@ body {
     font-family: var(--georgia);
     color: var(--beige);
     z-index: -1;
+    margin-bottom: 20px;
 }
 
 .article__img {

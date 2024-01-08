@@ -1,0 +1,24 @@
+.apropos__title {
+    font-family: var(--lora);
+    font-size: 24px;
+    margin-left: 15px;
+    color: var(--beige);
+    font-weight: 500;
+} 
+
+.body__title {
+    font-family: var(--lora);
+    font-size: 18px;
+    margin-left: 15px;
+    color: var(--blanc);
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.apropos__info {
+    margin-left: 15px;
+    color: var(--beige);
+    margin-right: 15px;
+    font-family: var(--georgia);
+    font-weight: 300    ;
+}

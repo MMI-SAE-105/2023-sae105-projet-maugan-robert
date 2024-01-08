@@ -23,7 +23,7 @@ input {
 
 textarea {
     margin-left: 15px;
-    padding : 5% 53% 5% 2%;
+    padding : 2% 53% 5% 2%;
     border: solid 1px var(--noir);
     margin-bottom: 30px;
 }
