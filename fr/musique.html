@@ -7,35 +7,42 @@
     <title>Musique</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Serif+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header header--home">
-        <a class="header__logo-link" href="/">
+
+        <a class="header__logo-link" href="/fr/index.html">
             <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
         </a>
-        <h1 class="header__title header__title--home">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/eng.png" alt="logo__anglais">
+        <h1 class="header__title">MARKOREL</h1>
+        <div class="header__right">
+            <a class="logo__langue" href="/en/index.html"><img src="/public/icon/eng.png" alt="logo__anglais"></a>
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
-        </button>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
                 <ul class="menu__ul">
-                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="film.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="citation.html">LE REVE DE MARC-AURÈLE</a></li>
+                    <li class="menu__item"><a class="menu__link" href="replique.html">LE RÊVE DE MARC-AURÈLE</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">LA PENSÉE DE MARC-AURÈLE</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">LA MASTERCLASS DE HANS ZIMMER</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">LA MASTERCLASS DE HANS ZIMMER</a>
+                    </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="apropos.html">A PROPOS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">AUTRES PROJETS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="apropos.html">À PROPOS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">AUTRES PROJETS</a></li>
                 </ul>
             </div>
         </nav>
@@ -67,7 +74,7 @@
 
             <h3 class="article__title">Le Voyage de Maximus</h3>
             <p class="article__body">
-                <a href="film.html">"Now We Are Free" est intimement liée au personnage de 
+                <a class="lien__externe" href="film.html">"Now We Are Free"</a> est intimement liée au personnage de 
                     Maximus, interprété par Russell Crowe. La mélodie exprime sa quête de 
                     liberté, de rédemption, et d'amour. Elle accompagne Maximus tout au 
                     long de son périple tragique, intensifiant les émotions à l'écran et
@@ -107,33 +114,36 @@
             </article>
             <section class="glossaire">
                 <h2 class="partie__title">GLOSSAIRE</h2>
-                <p class="glossaire__body"><strong>Cinéphile :</strong> Un cinéphile est une personne qui a 
+                <p class="glossaire__body"><strong class="strong">Cinéphile :</strong> Un cinéphile est une personne qui a 
                 une passion et un amour profond pour le cinéma.</p>
                 
-                <p class="glossaire__body"><strong>Une dystopie :</strong> genre littéraire, cinématographique ou artistique 
+                <p class="glossaire__body"><strong class="strong">Une dystopie :</strong> genre littéraire, cinématographique ou artistique 
                     qui décrit une société imaginaire ou un monde futur où les conditions de vie 
                     sont extrêmement difficiles</p>
                 
-                <p class="glossaire__body"><strong>Eudaimonia :</strong> terme philosophique d'origine grecque, 
+                <p class="glossaire__body"><strong class="strong">Eudaimonia :</strong> terme philosophique d'origine grecque, 
                     généralement traduit par "bien-être" ou "bonheur complet."</p>
             </section>
         </main>
         <footer>
             <div class="first__footer">
-                <ul>
+                <ul class="footer__liens">
                     <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
-                    <li class="footer__item"><a class="footer__link" href="apropos.html">A propos</a></li>
-                    <li class="footer__item"><a class="footer__link" href="autresprojets.html">Autres Projets</a></li>
+                    <li class="footer__item"><a class="footer__link" href="apropos.html">À propos</a></li>
+                    <li class="footer__item"><a class="footer__link" href="projets.html">Autres Projets</a></li>
                 </ul>
             </div>
             <div class="second__footer">
                 <p class="footer__name">Maugan Robert A2</p>
                 <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-                <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a href="">MMi
+                <p class="footer__info">Projet réalisé dans le cadre d’un exercice pédagogique au département<a
+                        class="footer__sitemmi" href=""> MMi
                         Montbéliard.</a></p>
-                <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
-                <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
-                <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+                <div class="logo__footer">
+                    <img class="footer__insta" src="/public/icon/logo_insta.png" alt="">
+                    <img class="footer__youtube" src="/public/icon/logo_youtube.png" alt="">
+                    <img class="footer__mmi" src="/public/icon/logo_mmi.png" alt="">
+                </div>
             </div>
         </footer>
     </body>

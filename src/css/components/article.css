@@ -5,7 +5,7 @@
     font-size: var(--body);
     color: var(--beige);
     font-family: var(--georgia);
-    font-weight: 200;
+    font-weight: 300;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
 .second__title {
     font-size: var(--page-title);
     font-family: var(--lora);
-    font-weight: 500;
+    font-weight: 600;
     color: var(--beige);
     margin-top: 10px;
     margin-left: 15px;
@@ -43,7 +43,7 @@ body {
 .blog {
     opacity: 0.5;
     margin-left: 15px;
-    font-size: var(--intro);
+    font-size: 11px;
     font-weight: 400;
     font-family: var(--georgia);
     color: var(--beige);
@@ -56,4 +56,9 @@ body {
     color: var(--beige);
     margin-top: 20px;
     margin-left: 15px;
+}
+
+.lien__externe {
+    font-size: var(--body);
+    color: var(--beige);
 }

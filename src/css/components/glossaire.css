@@ -1,0 +1,24 @@
+.partie__title {
+    font-family: var(--lora);
+    font-size: 24px;
+    margin-left: 15px;
+    color: var(--beige);
+    font-weight: 300;
+    
+}
+
+.glossaire {
+    border-top: solid 1px var(--beige);
+}
+
+.glossaire__body {
+    margin-left: 15px;
+    color : var(--beige);
+    opacity: 0.7;
+}
+
+.strong {
+    font-style: bold;
+    opacity: 1;
+    color: var(--blanc);
+}
