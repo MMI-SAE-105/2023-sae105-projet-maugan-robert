@@ -23,10 +23,7 @@
             <a class="logo__langue" href="/en/index.html"><img src="/public/icon/eng.png" alt="logo__anglais"></a>
 
             <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-                <div class="double__logo">
-                    <img class="logo__menu" x-show="menuIsOpen" src="/public/icon/logo_site.png" alt="">
-                    <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-                </div>
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
                 <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
             </button>
         </div>
@@ -40,6 +37,7 @@
                     <li class="menu__item"><a class="menu__link" href="musique.html">LA MASTERCLASS DE HANS ZIMMER</a>
                     </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
