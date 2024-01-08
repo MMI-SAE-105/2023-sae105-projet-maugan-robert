@@ -43,3 +43,16 @@
     padding-top: 15px;
     padding-right: 5px;
   }
+
+  .double__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .logo__menu {
+    width: 70px;
+    padding-left: 10px;
+    filter: invert(1);
+  }

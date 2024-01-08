@@ -3,8 +3,10 @@
     text-align: center;
     color: var(--beige);
     font-family: var(--lora);
-    margin-right: 40px;
-    margin-left: 40px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .title__p {
@@ -20,4 +22,10 @@
     font-family: var(--georgia);
     font-size: 15px;
     color: var(--beige);
+}
+
+.color__blue {
+    background-color: var(--bleu-sombre);
+    padding-top: 20px;
+    padding-bottom: 40px;
 }
