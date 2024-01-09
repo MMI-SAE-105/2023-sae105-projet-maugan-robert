@@ -84,6 +84,10 @@ figure {
     color: var(--beige);
 }
 
+.trailer {
+    border-bottom: solid 1px var(--beige);
+    padding-bottom: 15px;
+}
 .video {
     width: 100%;
     height: auto;

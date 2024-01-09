@@ -65,7 +65,7 @@
 
         <article class="article">
             <figure><img class="article__img" src="/public/img/film1.webp" alt="film1">
-                <figcaption>Cacacacacacac</figcaption>
+                <figcaption>Maximus</figcaption>
             </figure>
             <h3 class="article__title">Le Retour Dans l'Antiquité Romaine</h3>
             <p class="article__body">Bienvenue dans l'arène de l'ancienne Rome, où le général romain Maximus
@@ -124,89 +124,90 @@
                 <source src="/public/video/videofilm.mp4" type="video/mp4">
             </video>
         </section>
-        <section class="caroussel">
-            <h2 class="partie__title">FILM RECCOMMANDÉS</h2>
+        <section class="galerie">
+            <h2 class="partie__title">FILMS RECCOMMANDÉS</h2>
 
-            <div class="carrousel" x-data="{hrefCourant:'#ecran-1',}">
-                <button @click="parent = $refs.parent,parent.scrollLeft -= parent.clientWidth"
-                    class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant">
-                    < </button><button @click="parent = $refs.parent,parent.scrollLeft += parent.clientWidth"
-                            class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
-                        <div class="carrousel_parent-ecrans" x-ref="parent"
-                            @scroll.debounce.250ms.passive="hrefCourant = '#'+[...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/alexander.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Alexander</p>
+                    <p class="rea__films">Olivier Stone</p>
+                    <p class="resume__films">Ce film explore la vie d'Alexandre le Grand, conquérant de l'Antiquité.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=51115.html"><button class="btn__vignette">EN SAVOIR PLUS </button></a>
+            </div>
 
-                            <div id="ecran-1" class="carrousel_ecran">
-                                <figure>
-                                    <div><img src="/public/img/troy.webp" alt="image ecran 1"></div>
-                                    <div class="txt__caroussel"><figcaption><a href="campus.html">Troy</a></figcaption><p class="film__caroussel">Wolfang Petersen</p><p class="info__film">Ce film met en scène les combats légendaires de la Grèce antique, avec Brad Pitt dans le rôle d'Achille.</p></div>
-                                </figure>
-                            </div>
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/lastsamurai.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">The Last Samurai</p>
+                    <p class="rea__films">Edward Zwick</p>
+                    <p class="resume__films">Tom Cruise incarne un soldat américain capturé par des samouraïs au Japon du XIXe siècle</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=46943.html"><button class="btn__vignette">EN SAVOIR PLUS </button></a>
+            </div>
 
-                            <div id="ecran-2" class="carrousel_ecran">
-                                <figure>
-                                    <img class="img__caroussel" src="/public/img/benhur.webp" alt="image ecran 2">
-                                    <figcaption><a href="immeubles.html">Benhur</a></figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-3" class="carrousel_ecran">
-                                <figure>
-                                    <img class="img__caroussel" src="public/img/image 6.webp" alt="image ecran 3">
-                                    <figcaption><a href="crownhall.html">Crown Hall</a></figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-4" class="carrousel_ecran">
-                                <figure>
-                                    <img class="img__caroussel" src="public/img/image 7.webp" alt="image ecran 4">
-                                    <figcaption><a href="seagram.html">Seagram Building</a></figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-5" class="carrousel_ecran">
-                                <figure>
-                                    <img class="img__caroussel" src="public/img/image 10.webp" alt="image ecran 5">
-                                    <figcaption><a href="bibliotheque.html">Bibliothèque Martin Luther King Jr
-                                            Memorial</a></figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-6" class="carrousel_ecran">
-                                <figure>
-                                    <img class="img__caroussel" src="public/img/image 9.webp" alt="image ecran 6">
-                                    <figcaption><a href="neue.html">Neue Nationalgalerie</a></figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-7" class="carrousel_ecran">
-                                <figure>
-                                    <img class="img__caroussel" src="public/img/image 8.webp" alt="image ecran 7">
-                                    <figcaption><a href="bacardi.html">Bacardi Office Building</a></figcaption>
-                                </figure>
-                            </div>
-                            <div id="ecran-8" class="carrousel_ecran">
-                                <figure>
-                                    <img class="img__caroussel" src="public/img/image 11.webp" alt="image ecran 8">
-                                    <figcaption><a href="farnsworth.html">Farnsworth House</a></figcaption>
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/benhur.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Ben-hur</p>
+                    <p class="rea__films">William Wyler</p>
+                    <p class="resume__films">Ce film raconte l'histoire de Judah Ben-Hur, un noble juif réduit en esclavage dans la Rome antique.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=1532.html"><button class="btn__vignette">EN SAVOIR PLUS </button></a>
+            </div>
 
-                                </figure>
-                            </div>
-                        </div>
-                        <ul class="caroussel_liste-liens">
-                            <li><a href="#ecran-1" :class="{actif:hrefCourant==='#ecran-1'}" class="caroussel_lien"></a>
-                            </li>
-                            <li><a href="#ecran-2" :class="{actif:hrefCourant==='#ecran-2'}" class="caroussel_lien"></a>
-                            </li>
-                            <li><a href="#ecran-3" :class="{actif:hrefCourant==='#ecran-3'}" class="caroussel_lien"></a>
-                            </li>
-                            <li><a href="#ecran-4" :class="{actif:hrefCourant==='#ecran-4'}" class="caroussel_lien"></a>
-                            </li>
-                            <li><a href="#ecran-5" :class="{actif:hrefCourant==='#ecran-5'}" class="caroussel_lien"></a>
-                            </li>
-                            <li><a href="#ecran-6" :class="{actif:hrefCourant==='#ecran-6'}" class="caroussel_lien"></a>
-                            </li>
-                            <li><a href="#ecran-7" :class="{actif:hrefCourant==='#ecran-7'}" class="caroussel_lien"></a>
-                            </li>
-                            <li><a href="#ecran-8" :class="{actif:hrefCourant==='#ecran-8'}" class="caroussel_lien"></a>
-                            </li>
-                        </ul>
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/300.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">300</p>
+                    <p class="rea__films">Zack Snyder</p>
+                    <p class="resume__films">Ce film relate la bataille des Thermopyles, où 300 Spartiates ont fait face à l'armée perse.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=57529.html"><button class="btn__vignette">EN SAVOIR PLUS </button></a>
+            </div>
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/kingdom.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Kingdom of Heaven</p>
+                    <p class="rea__films">Ridley Scott</p>
+                    <p class="resume__films">Ce film se déroule pendant les Croisades et suit un forgeron (joué par Orlando Bloom) devenant un chevalier.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=54205.html"><button class="btn__vignette">EN SAVOIR PLUS </button></a>
+            </div>
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/troy.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Troy</p>
+                    <p class="rea__films">Wolfang Petersen</p>
+                    <p class="resume__films">Ce film met en scène les combats légendaires de la Grèce antique, avec Brad Pitt dans le rôle d'Achille.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=47357.html"><button class="btn__vignette">EN SAVOIR PLUS </button></a>
             </div>
         </section>
+
+            
         <section class="glossaire">
             <h2 class="partie__title">GLOSSAIRE</h2>
             <p class="glossaire__body"><strong class="strong">Cinéphile :</strong> Un cinéphile est une personne qui a
