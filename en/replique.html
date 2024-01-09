@@ -4,38 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quote</title>
+    <title>Réplique</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Serif+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="header header--home">
-        <a class="header__logo-link" href="/">
-            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
-        </a>
-        <h1 class="header__title header__title--home">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/france.png" alt="logo__anglais">
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
-        </button>
+        <a class="header__logo-link" href="/fr/index.html">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite">
+        </a>
+        <h1 class="header__title">MARKOREL</h1>
+        <div class="header__right">
+            <a class="logo__langue" href="/fr/replique.html"><img src="/public/icon/france.png" alt="logo__anglais"></a>
+
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
                 <ul class="menu__ul">
-                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="film.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="citation.html">THE DREAM OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="replique.html">THE DREAM OF MARCUS AURELIUS</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">THE THOUGHTS OF MARCUS AURELIUS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">THE HANS ZIMMER'S MASTERCLASS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">THE HANS ZIMMER'S MASTERCLASS</a>
+                    </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
                     <li class="menu__item"><a class="menu__link" href="apropos.html">ABOUT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">OTHER PROJECTS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">OTHER PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
@@ -49,28 +56,30 @@
             continues to resonate with audiences worldwide: 'Marcus Aurelius had a dream, 
             that dream was called Rome.' This line, spoken by the character Maximus, 
             portrayed by Russell Crowe, reveals a powerful underlying message that 
-            transcends the screen and deserves to be explored."</p>
+            transcends the screen and deserves to be explored.</p>
         <p class="blog">Published on 11/01 by Maugan ROBERT. Reading time : 2 min</p>
         </section>
 
         <article class="article">
-            <img class="article__img" src="/public/img/cita1.webp" alt="film1">
+            <figure><img class="article__img" src="/public/img/cita1.webp" alt="film1">
+                <figcaption>Marcus-Aurelius</figcaption></figure>
             <h3 class="article__title">The Emperor</h3>
             <p class="article__body">Marcus Aurelius, Roman emperor of the 2nd century, 
                 is famous for his 'Meditations,' a philosophical reflection. His reign 
                 is marked by Stoic wisdom and the pursuit of virtue. His book serves 
                 as a guide for leading a happy and serene life. Nowadays, many people 
-                apply his advice and<a href="livre.html"> his philosophy.</a>.</p>
+                apply his advice and <a class="lien__externe" href="livre.html"> his philosophy.</a></p>
 
             <h3 class="article__title">The Context of the Quote</h3>
             <p class="article__body">
-                <a href="film.html">"Gladiator" </a> plunges us into ancient Rome, where 
+                <a class="lien__externe" href="film.html">"Gladiator" </a>plunges us into ancient Rome, where 
                 Emperor Marcus Aurelius seeks to leave a lasting legacy to Rome. Before 
                 his death, he designates Maximus as his ideal successor, hoping that this
                  virtuous general will restore the Roman Republic by ending the tyrannical 
                  rule of the emperors.</p>
 
-                <img class="article__img" src="/public/img/cita2.webp" alt="film2">
+               <figure><img class="article__img" src="/public/img/cita2.webp" alt="film2">
+                <figcaption>Ancient Rome</figcaption></figure>
             <h3 class="article__title">The Profound Meaning</h3>
             <p class="article__body">
                 The quote 'Marcus Aurelius had a dream, that dream was called Rome' 
@@ -88,7 +97,8 @@
                 a cause greater than oneself are timeless values. 'Gladiator' has contributed 
                 to popularizing these ideals while providing an epic vision of ancient Rome.</p>
 
-            <img class="article__img" src="/public/img/cita3.webp" alt="film3">
+            <figure><img class="article__img" src="/public/img/cita3.webp" alt="film3">
+                <figcaption>Hemicycle Roman</figcaption></figure>
             <h3 class="article__title">The Timeless Quote</h3>
             <p class="article__body">The quote transcends mere cinematic dialogue. It embodies the 
                 struggle between tyranny and virtue, between absolute power and the desire for 
@@ -101,34 +111,37 @@
             </article>
             <section class="glossaire">
                 <h2 class="partie__title">GLOSSARY</h2>
-                <p class="glossaire__body"><strong>Cinephile :</strong> A cinephile is a person who has a 
+                <p class="glossaire__body"><strong class="strong">Cinephile :</strong> A cinephile is a person who has a 
                     passion and deep love for cinema.</p>
-                
-                <p class="glossaire__body"><strong>A dystopia :</strong> A literary, cinematic, or artistic 
+    
+                <p class="glossaire__body"><strong class="strong">A dystopia :</strong> A literary, cinematic, or artistic 
                     genre that describes an imaginary society or a future world where living conditions 
                     are extremely challenging.</p>
-                
-                <p class="glossaire__body"><strong>Eudaimonia :</strong> Term of Greek philosophical 
+    
+                <p class="glossaire__body"><strong class="strong">Eudaimonia :</strong> Term of Greek philosophical 
                     origin, commonly translated as 'well-being' or 'complete happiness."</p>
             </section>
         </main>
         <footer>
             <div class="first__footer">
-                <ul>
+                <ul class="footer__liens">
                     <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
                     <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
-                    <li class="footer__item"><a class="footer__link" href="autresprojets.html">Other projects</a></li>
+                    <li class="footer__item"><a class="footer__link" href="projets.html">Other projects</a></li>
                 </ul>
             </div>
             <div class="second__footer">
                 <p class="footer__name">Maugan Robert A2</p>
-                <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-                <p class="footer__info">Project carried out as part of an educational exercise in the department <a class="footer__mmi" href="">MMi
+                <a class="footer__mail" href="mailto:">maugan.robert@edu.univ-fcomte.fr</a>
+                <p class="footer__info">Project carried out as part of an educational exercise in the department <a
+                        class="footer__sitemmi" href="https://mmimontbeliard.com/">MMi
                         Montbéliard.</a></p>
-                <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
-                <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
-                <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+                <div class="logo__footer">
+                    <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__insta" src="/public/icon/logo_insta.png" alt=""></a>
+                    <a href="https://www.youtube.com/@departementmmi4128/videos"><img class="footer__youtube" src="/public/icon/logo_youtube.png" alt=""></a>
+                    <a href="https://mmimontbeliard.com/"><img class="footer__mmi" src="/public/icon/logo_mmi.png" alt=""></a>
+                </div>
             </div>
         </footer>
     </body>
-    </html>
+    </html> 

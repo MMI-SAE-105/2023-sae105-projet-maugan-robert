@@ -4,38 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Film director</title>
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <title>Réalisateur</title>
+    <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Serif+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <body>
     <header class="header header--home">
-        <a class="header__logo-link" href="/">
+
+        <a class="header__logo-link" href="/fr/index.html">
             <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
         </a>
-        <h1 class="header__title header__title--home">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/france.png" alt="logo__anglais">
+        <h1 class="header__title">MARKOREL</h1>
+        <div class="header__right">
+            <a class="logo__langue" href="/fr/realisateur.html"><img src="/public/icon/france.png" alt="logo__anglais"></a>
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
-        </button>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
                 <ul class="menu__ul">
-                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="film.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="citation.html">THE DREAM OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="replique.html">THE DREAM OF MARCUS AURELIUS</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">THE THOUGHTS OF MARCUS AURELIUS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">THE HANS ZIMMER'S MASTERCLASS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">THE HANS ZIMMER'S MASTERCLASS</a>
+                    </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
                     <li class="menu__item"><a class="menu__link" href="apropos.html">ABOUT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">OTHER PROJECTS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">OTHER PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
@@ -53,13 +59,14 @@
         </section>
 
         <article class="article">
-            <img class="article__img" src="/public/img/rea1.webp" alt="film1">
+            <figure><img class="article__img" src="/public/img/rea1.webp" alt="film1">
+                <figcaption>Ridley Scott</figcaption></figure>
             <h3 class="article__title">Humble Beginnings, Overflowing Creativity</h3>
             <p class="article__body">Ridley Scott was born on November 30, 1937, in Tyne and Wear,
-                 England. He began his career in advertising, but his passion for visual storytelling
-                  quickly led him into the world of cinema. After studying at the Royal College of 
-                  Art in London, he directed his first feature film, 'The Duellists,' in 1977, 
-                  a critically acclaimed historical film.</p>
+                England. He began his career in advertising, but his passion for visual storytelling
+                 quickly led him into the world of cinema. After studying at the Royal College of 
+                 Art in London, he directed his first feature film, 'The Duellists,' in 1977, 
+                 a critically acclaimed historical film.</p>
 
             <h3 class="article__title">"Alien": A Science Fiction Masterpiece</h3>
             <p class="article__body">In 1979, Ridley Scott made a groundbreaking turn with the 
@@ -67,8 +74,9 @@
                 revolutionizing the science fiction genre. The innovative aesthetics 
                 and terrifying atmosphere of the film opened new horizons for genre cinema.</p>
 
-                <img class="article__img" src="/public/img/rea2.webp" alt="film2">
-            <h3 class="article__title">Blade Runner": The Cyberpunk Universe</h3>
+                <figure><img class="article__img" src="/public/img/rea2.webp" alt="film2">
+                    <figcaption>Ridley on the set of Alien.</figcaption></figure>
+            <h3 class="article__title">"Blade Runner": The Cyberpunk Universe</h3>
             <p class="article__body">In 1982, Ridley Scott directed 'Blade Runner,' 
                 a visionary science fiction film. This cyberpunk masterpiece 
                 redefined the standards of the genre. The dystopian universe 
@@ -76,13 +84,14 @@
                 influenced popular culture.</p>
 
             <h3 class="article__title">"Gladiator": The Roman Epic</h3>
-            <p class="article__body"> In 2000, Ridley Scott directed 'Gladiator,' an epic 
+            <p class="article__body">In 2000, Ridley Scott directed 'Gladiator,' an epic 
                 film that left a lasting impact. With Russell Crowe in the lead role, the 
                 film immerses us in ancient Rome with memorable battle scenes and a poignant 
                 story of revenge and redemption. 'Gladiator' won five Oscars, including Best
                  Picture, solidifying Ridley Scott as a master of cinema.</p>
 
-            <img class="article__img" src="/public/img/rea3.webp" alt="film3">
+            <figure><img class="article__img" src="/public/img/rea3.webp" alt="film3">
+                <figcaption>Ridley on the set of Gladiator</figcaption></figure>
             <h3 class="article__title">Enduring Legacy</h3>
             <p class="article__body">Ridley Scott's career is a source of inspiration for 
                 many aspiring filmmakers. His distinctive visual style, compelling 
@@ -97,37 +106,40 @@
                 From his humble beginnings to his groundbreaking films, his legacy 
                 endures, and Ridley Scott remains an iconic figure in contemporary cinema.</p>
             </article>
+
             <section class="glossaire">
-                <section class="glossaire">
-                    <h2 class="partie__title">GLOSSARY</h2>
-                    <p class="glossaire__body"><strong>Cinephile :</strong> A cinephile is a person who has a 
-                        passion and deep love for cinema.</p>
-                    
-                    <p class="glossaire__body"><strong>A dystopia :</strong> A literary, cinematic, or artistic 
-                        genre that describes an imaginary society or a future world where living conditions 
-                        are extremely challenging.</p>
-                    
-                    <p class="glossaire__body"><strong>Eudaimonia :</strong> Term of Greek philosophical 
-                        origin, commonly translated as 'well-being' or 'complete happiness."</p>
-                </section>
-            </main>
-            <footer>
-                <div class="first__footer">
-                    <ul>
-                        <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
-                        <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
-                        <li class="footer__item"><a class="footer__link" href="autresprojets.html">Other projects</a></li>
-                    </ul>
-                </div>
-                <div class="second__footer">
-                    <p class="footer__name">Maugan Robert A2</p>
-                    <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-                    <p class="footer__info">Project carried out as part of an educational exercise in the department <a class="footer__mmi" href="">MMi
-                            Montbéliard.</a></p>
-                    <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
-                    <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
-                    <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
-                </div>
-            </footer>
+                <h2 class="partie__title">GLOSSARY</h2>
+                <p class="glossaire__body"><strong class="strong">Cinephile :</strong> A cinephile is a person who has a 
+                    passion and deep love for cinema.</p>
+    
+                <p class="glossaire__body"><strong class="strong">A dystopia :</strong> A literary, cinematic, or artistic 
+                    genre that describes an imaginary society or a future world where living conditions 
+                    are extremely challenging.</p>
+    
+                <p class="glossaire__body"><strong class="strong">Eudaimonia :</strong> Term of Greek philosophical 
+                    origin, commonly translated as 'well-being' or 'complete happiness."</p>
+            </section>
+        </main>
+    <footer>
+        <div class="first__footer">
+            <ul class="footer__liens">
+                <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
+                <li class="footer__item"><a class="footer__link" href="projets.html">Other projects</a></li>
+            </ul>
+        </div>
+        <div class="second__footer">
+            <p class="footer__name">Maugan Robert A2</p>
+            <a class="footer__mail" href="mailto:">maugan.robert@edu.univ-fcomte.fr</a>
+            <p class="footer__info">Project carried out as part of an educational exercise in the department <a
+                    class="footer__sitemmi" href="https://mmimontbeliard.com/">MMi
+                    Montbéliard.</a></p>
+            <div class="logo__footer">
+                <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__insta" src="/public/icon/logo_insta.png" alt=""></a>
+                <a href="https://www.youtube.com/@departementmmi4128/videos"><img class="footer__youtube" src="/public/icon/logo_youtube.png" alt=""></a>
+                <a href="https://mmimontbeliard.com/"><img class="footer__mmi" src="/public/icon/logo_mmi.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
     </body>
     </html>
