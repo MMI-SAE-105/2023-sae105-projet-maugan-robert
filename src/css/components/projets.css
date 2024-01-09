@@ -1,0 +1,15 @@
+.vignette {
+    display: flex;
+}
+
+.vignette__img {
+    width: 30%;
+}
+
+.projets__title {
+    font-family: var(--lora);
+    font-size: 24px;
+    margin-left: 15px;
+    color: var(--beige);
+    font-weight: 300;
+}
