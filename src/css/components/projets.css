@@ -1,15 +1,64 @@
-.vignette {
+.vignette__autresprojets {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
 }
 
 .vignette__img {
-    width: 30%;
+    display: block;
+    margin: auto;
+    width: 70%;
+    padding-top: 4%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
 }
 
 .projets__title {
     font-family: var(--lora);
     font-size: 24px;
     margin-left: 15px;
-    color: var(--beige);
-    font-weight: 300;
+    color: var(--vert-gris);
+    font-weight: 500;
 }
+
+.body__autresprojets {
+    background-color: var(--blanc);
+}
+
+.vignette__txt{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--vert-gris);
+    padding: 2% 0% 2% 0%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 70%;
+}
+
+.vignette__projet {
+    color: var(--beige);
+    text-align: center;
+    font-family: var(--georgia);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.vignette__nom {
+    color: var(--beige);
+    text-align: center;
+    font-family: var(--georgia);
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+.a__projets {
+    text-decoration: none;
+}
+
+
