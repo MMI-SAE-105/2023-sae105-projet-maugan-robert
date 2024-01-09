@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -7,42 +7,55 @@
     <title>Markorel</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Serif+Georgian:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Noto+Serif+Georgian:wght@200;300;400;500;600;700&display=swap');
+    </style>
 </head>
 
-<body>
+<body data-page="film">
     <header class="header header--home">
-        <a class="header__logo-link" href="/">
+
+        <a class="header__logo-link" href="/fr/index.html">
             <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
         </a>
-        <h1 class="header__title header__title--home">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/france.png" alt="logo__francais">
+        <h1 class="header__title">MARKOREL</h1>
+        <div class="header__right">
+            <a class="logo__langue" href="/fr/index.html"><img src="/public/icon/france.png" alt="logo__anglais"></a>
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
-        </button>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="film.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="citation.html">THE DREAM OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="replique.html">THE DREAM OF MARCUS AURELIUS</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">THE THOUGHTS OF MARCUS AURELIUS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">THE HANS ZIMMER'S MASTERCLASS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">THE HANS ZIMMER'S MASTERCLASS</a>
+                    </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
                     <li class="menu__item"><a class="menu__link" href="apropos.html">ABOUT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">OTHER PROJECTS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">OTHER PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="header__main">
-            <h2>Marcus Aurelius had a dream, and that dream was called Rome</h2>
+            <div class="color__blue">
+                <q class="site__title">Marcus Aurelius had a dream, and that dream was called Rome</q>
+            </div>
             <img class="img__accueil" src="/public/img/image du film.webp" alt="">
             <h3 class="title__p">Welcome to Markorel</h3>
             <p class="p__home">Discover the unforgettable epic of Maximus in the heart of 
@@ -51,61 +64,88 @@
                 Marcus Aurelius that left a mark on the history of cinema.</p>
         </section>
         <section class="teaser__article">
-            <div class="vignette__article">
-                <h4 class="title__vignette">GLADIATOR</h4>
-                <p class="p__vignette">Gladiator is one of the greatest films in history,
-                     but its theme runs deeper than you might think...</p>
-                <button class="btn__vignette">READ THE ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettefilm.webp" alt="">
-            </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">RIDLEY SCOTT</h4>
-                <p class="p__vignette">Ridley Scott is one of the best directors in the world; 
-                    come discover his success and his story...</p>
-                <button class="btn__vignette">READ THE ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignetterea.webp" alt="">
-            </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">THE DREAM OF MARCUS AURELIUS</h4>
-                <p class="p__vignette">Discover the profound meaning behind the legendary
-                     quote of Marcus Aurelius...</p>
-                <button class="btn__vignette">READ THE ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettecita.webp" alt="">
-            </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">THE THOUGHTS OF MARCUS AURELIUS</h4>
-                <p class="p__vignette">Learn more about the thoughts of Marcus 
-                    Aurelius and lead a better life...</p>
-                <button class="btn__vignette">READ THE ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettelivre.webp" alt="">
-            </div>
-            <div class="vignette__article">
-                <h4 class="title__vignette">THE HANS ZIMMER'S MASTERCLASS</h4>
-                <p class="p__vignette">Uncover the secrets behind the fabulous music of 
-                    Hans Zimmer's 'Now We Are Free'...</p>
-                <button class="btn__vignette">READ THE ARTICLE</button>
-                <img class="img__vignette" src="/public/img/vignettemusic.webp" alt="">
-            </div>
+            <article class="vignette">
+                <div class="vignette__article">
+                    <h4 class="title__vignette">GLADIATOR</h4>
+                    <p class="p__vignette">Gladiator is one of the greatest films in history,
+                        but its theme runs deeper than you might think...</p>
+                    <a href="film.html"><button class="btn__vignette">READ THE ARTICLE</button></a>
+                </div>
+                <div class="div__img">
+                    <img class="img__vignette" src="/public/img/vignettefilm.webp" alt="">
+                </div>
+            </article>
+
+                <article class="vignette">
+                    <div class="vignette__article">
+                        <h4 class="title__vignette">RIDLEY SCOTT</h4>
+                        <p class="p__vignette">Ridley Scott is one of the best directors in the world; 
+                            come discover his success and his story...</p>
+                        <a href="realisateur.html"><button class="btn__vignette">READ THE ARTICLE</button></a>
+                    </div>
+                    <div class="div__img">
+                        <img class="img__vignette" src="/public/img/vignetterea.webp" alt="">
+                    </div>
+                </article>
+
+
+                    <article class="vignette">
+                        <div class="vignette__article">
+                            <h4 class="title__vignette">THE DREAM OF MARCUS AURELIUS</h4>
+                            <p class="p__vignette">Discover the profound meaning behind the legendary
+                                quote of Marcus Aurelius...</p>
+                            <a href="replique.html"><button class="btn__vignette">READ THE ARTICLE</button></a>
+                        </div>
+                        <div class="div__img">
+                            <img class="img__vignette" src="/public/img/vignettecita.webp" alt="">
+                        </div>
+                    </article>
+
+    
+                        <article class="vignette">
+                            <div class="vignette__article">
+                                <h4 class="title__vignette">THE THOUGHTS OF MARCUS AURELIUS</h4>
+                                <p class="p__vignette">Learn more about the thoughts of Marcus 
+                                    Aurelius and lead a better life...</p>
+                                <a href="livre.html"><button class="btn__vignette">READ THE ARTICLE</button></a>
+                            </div>
+                            <div class="div__img">
+                                <img class="img__vignette" src="/public/img/vignettelivre.webp" alt="">
+                            </div>
+                        </article>
+                    
+                            <article class="vignette">
+                                <div class="vignette__article">
+                                    <h4 class="title__vignettemusic">THE HANS ZIMMER'S MASTERCLASS</h4>
+                                    <p class="p__vignette">Uncover the secrets behind the fabulous music of 
+                                        Hans Zimmer's 'Now We Are Free'...</p>
+                                    <a href="musique.html"><button class="btn__vignette">READ THE ARTICLE</button></a>
+                                </div>
+                                <div class="div__img">
+                                    <img class="img__vignette" src="/public/img/vignettemusic.webp" alt="">
+                                </div>
+                            </article>
         </section>
     </main>
     <footer>
         <div class="first__footer">
-            <ul>
+            <ul class="footer__liens">
                 <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
                 <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
-                <li class="footer__item"><a class="footer__link" href="autresprojets.html">Other projects</a></li>
+                <li class="footer__item"><a class="footer__link" href="projets.html">Other projects</a></li>
             </ul>
         </div>
         <div class="second__footer">
             <p class="footer__name">Maugan Robert A2</p>
-            <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-            <p class="footer__info">Project carried out as part of an educational exercise in the department <a class="footer__mmi" href="">MMi
+            <a class="footer__mail" href="mailto:">maugan.robert@edu.univ-fcomte.fr</a>
+            <p class="footer__info">Project carried out as part of an educational exercise in the department <a
+                    class="footer__sitemmi" href="https://mmimontbeliard.com/">MMi
                     Montbéliard.</a></p>
             <div class="logo__footer">
-            <img class="footer__insta" src="/public/icon/logo_insta.png" alt="">
-            <img class="footer__youtube" src="/public/icon/logo_youtube.png" alt="">
-            <img class="footer__mmi" src="/public/icon/logo_mmi.png" alt="">
-        </div>
+                <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__insta" src="/public/icon/logo_insta.png" alt=""></a>
+                <a href="https://www.youtube.com/@departementmmi4128/videos"><img class="footer__youtube" src="/public/icon/logo_youtube.png" alt=""></a>
+                <a href="https://mmimontbeliard.com/"><img class="footer__mmi" src="/public/icon/logo_mmi.png" alt=""></a>
+            </div>
         </div>
     </footer>
 </body>
