@@ -15,7 +15,7 @@
 
 input {
     margin-left: 15px;
-    padding: 5% 50% 5% 2%;
+    padding: 5% 45% 5% 2%;
     border: solid 1px var(--noir);
     margin-right: -15px;
 }
@@ -23,7 +23,7 @@ input {
 
 textarea {
     margin-left: 15px;
-    padding : 2% 53% 5% 2%;
+    padding : 2% 48% 5% 2%;
     border: solid 1px var(--noir);
     margin-bottom: 30px;
 }
