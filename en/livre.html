@@ -1,60 +1,72 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book</title>
+    <title>Livre</title>
     <link rel="stylesheet" href="/src/css/style.css" />
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Noto+Serif+Georgian:wght@200;300;400;500;600;700&display=swap');
+    </style>
 </head>
 
 <body>
     <header class="header header--home">
-        <a class="header__logo-link" href="/">
-            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
-        </a>
-        <h1 class="header__title header__title--home">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/france.png" alt="logo__anglais">
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
-        </button>
+        <a class="header__logo-link" href="/fr/index.html">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite">
+        </a>
+        <h1 class="header__title">MARKOREL</h1>
+        <div class="header__right">
+            <a class="logo__langue" href="/fr/livre.html"><img src="/public/icon/france.png" alt="logo__anglais"></a>
+
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
                 <ul class="menu__ul">
-                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="film.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="citation.html">THE DREAM OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="replique.html">THE DREAM OF MARCUS AURELIUS</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">THE THOUGHTS OF MARCUS AURELIUS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">THE HANS ZIMMER'S MASTERCLASS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">THE HANS ZIMMER'S MASTERCLASS</a>
+                    </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
                     <li class="menu__item"><a class="menu__link" href="apropos.html">ABOUT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">OTHER PROJECTS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">OTHER PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
         <section class="article__header">
-        <h1 class="big__title">« Meditations »</h1>
-        <h2 class="second__title">An Eternal Guide to Personal Wisdom</h2>
-        <p class="article__intro">In the universe of Stoic philosophy, the book 
-            'Meditations' by Marcus Aurelius shines like a bright star. Marcus 
-            Aurelius, a Roman emperor and Stoic philosopher, wrote these meditations 
-            in the 2nd century, and they still resonate today as a timeless guide for 
-            a balanced and fulfilling life. In this article, we will explore the
-             precious teachings contained in this masterpiece of philosophy.</p>
-        <p class="blog">Published on 11/01 by Maugan ROBERT. Reading time : 2 min</p>
+            <h1 class="big__title">« Meditations »</h1>
+            <h2 class="second__title">An Eternal Guide to Personal Wisdom</h2>
+            <p class="article__intro">In the universe of Stoic philosophy, the book 
+                'Meditations' by Marcus Aurelius shines like a bright star. Marcus 
+                Aurelius, a Roman emperor and Stoic philosopher, wrote these meditations 
+                in the 2nd century, and they still resonate today as a timeless guide for 
+                a balanced and fulfilling life. In this article, we will explore the
+                 precious teachings contained in this masterpiece of philosophy.</p>
+            <p class="blog">Published on 11/01 by Maugan ROBERT. Reading time : 2 min</p>
         </section>
 
-        <article class="article">
-            <img class="article__img" src="/public/img/livre1.webp" alt="film1">
+        <article class="article__livre">
+            <figure><img class="article__img" src="/public/img/livre1.jpg" alt="film1">
+                <figcaption>Marcus-Aurelius</figcaption>
+            </figure>
             <h3 class="article__title">Stoicism : A Philosophy of Well-Being</h3>
             <p class="article__body">Stoicism is an ancient philosophy that advocates virtue, 
                 rationality, and self-discipline as keys to well-being. As an emperor,
@@ -68,12 +80,14 @@
                 but we have the power to control our reactions and thoughts. 
                 This wisdom helps us find inner serenity even in challenging moments.</p>
 
-                <img class="article__img" src="/public/img/livre2.webp" alt="film2">
+            <figure><img class="article__img" src="/public/img/livre2.webp" alt="film2">
+                <figcaption>Quote</figcaption>
+            </figure>
             <h3 class="article__title">Lesson 2 : Virtue as the Chief Aim</h3>
             <p class="article__body">
                 The philosopher emperor emphasizes the value of virtue. According to him, 
                 the ultimate purpose of life is to cultivate wisdom, justice, temperance, 
-                and courage. By following these values, we can approach eudaimonia, 
+                and courage. By following these values, we can approach eudaimonia*, 
                 a state of well-being and personal fulfillment.</p>
 
             <h3 class="article__title">Lesson 3 : The Impermanence of Life</h3>
@@ -83,7 +97,9 @@
                 pleasures and pains. This awareness encourages us to live in the 
                 present moment and to appreciate each experience.</p>
 
-            <img class="article__img" src="/public/img/livre3.webp" alt="film3">
+            <figure><img class="article__img" src="/public/img/livre3.webp" alt="film3">
+                <figcaption>Quote</figcaption>
+            </figure>
             <h3 class="article__title">A Treasury of Wisdom</h3>
             <p class="article__body">In conclusion, 'Meditations' by Marcus Aurelius is much 
                 more than a mere philosophy book. It is a timeless guide that reminds us 
@@ -92,83 +108,140 @@
                 today, offering a beacon for those seeking serenity and fulfillment in an 
                 ever-changing world. This book is a treasure trove of wisdom to be discovered
                  and pondered by anyone on a quest for meaning in life.</p>
-            </article>
-            <section class="frise">
-                <h2 class="partie__title">SIMILAR BOOKS</h2>
+        </article>
+        <section class="frise">
+            <h2 class="partie__title">SIMILAR BOOKS</h2>
 
             <div class="vignette__livre">
-                <img class="livre__img" src="/public/img/vieheureuse.webp" alt="seneque">
-                <p class="livre__title">“La vie heureuse”</p>
-                <p class="livre__autor">Sénèque</p>
-                <p class="livre__date">58 après J-C</p>
+                <div class="div__imglivre">
+                    <img class="livre__img" src="/public/img/vieheureuse.webp" alt="seneque">
+                </div>
+                <div class="div__txtlivre">
+                    <p class="livre__title">La vie heureuse</p>
+                    <p class="livre__autor">Sénèque</p>
+                    <p class="livre__date">58 après J-C</p>
+                    <a
+                        href="https://www.amazon.fr/Vie-heureuse-Bri%C3%A8vet%C3%A9-vie/dp/2080712446/ref=asc_df_2080712446/?tag=googshopfr-21&linkCode=df0&hvadid=228715232282&hvpos=&hvnetw=g&hvrand=3280988481234702899&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9055137&hvtargid=pla-453322237420&psc=1"
+                            class="btn__vignette">LEARN MORE</a>
+                </div>
             </div>
+            <img class="fleche__frise" src="/public/icon/fleche.png" alt="">
 
             <div class="vignette__livre">
-                <img class="livre__img" src="/public/img/essais.webp" alt="seneque">
-                <p class="livre__title">“Essais”</p>
-                <p class="livre__autor">Michel de Montaigne</p>
-                <p class="livre__date">1580</p>
+                <div class="div__imglivre">
+                    <img class="livre__img" src="/public/img/essays.webp" alt="seneque">
+                </div>
+                <div class="div__txtlivre">
+                    <p class="livre__title">The Complete Essays</p>
+                    <p class="livre__autor">Michel de Montaigne</p>
+                    <p class="livre__date">1580</p>
+                    <a
+                        href="https://www.amazon.co.uk/Complete-Essays-Michel-Montaigne/dp/0140446044/ref=sr_1_1?crid=15AA1EABK2DRA&keywords=essays+montaigne&qid=1704833942&sprefix=essays+m%2Caps%2C98&sr=8-1"
+                            class="btn__vignette">LEARN MORE</a>
+                </div>
             </div>
+            <img class="fleche__frise" src="/public/icon/fleche.png" alt="">
+ 
 
             <div class="vignette__livre">
-                <img class="livre__img" src="/public/img/siddhartha.webp" alt="seneque">
-                <p class="livre__title">“Siddhartha”</p>
-                <p class="livre__autor">Herman Hesse</p>
-                <p class="livre__date">1922</p>
+                <div class="div__imglivre">
+                    <img class="livre__img" src="/public/img/siddhartha.webp" alt="seneque">
+                </div>
+                <div class="div__txtlivre">
+                    <p class="livre__title">Siddhartha</p>
+                    <p class="livre__autor">Herman Hesse</p>
+                    <p class="livre__date">1922</p>
+                    <a
+                        href="https://www.amazon.fr/Siddharta-poche-Herman-Hess/dp/2755664916/ref=sr_1_1?c
+                        rid=1O95MEHGG1ECR&keywords=siddhartha&qid=1704807464&s=books&sprefix=sidda%2Cstripbooks%2C105&sr=1-1"
+                            class="btn__vignette">LEARN MORE</a>
+                </div>
             </div>
+            <img class="fleche__frise" src="/public/icon/fleche.png" alt="">
 
             <div class="vignette__livre">
-                <img class="livre__img" src="/public/img/alchimiste.webp" alt="seneque">
-                <p class="livre__title">“L'alchimiste”</p>
-                <p class="livre__autor">Paulo Coelho</p>
-                <p class="livre__date">1988</p>
+                <div class="div__imglivre">
+                    <img class="livre__img" src="/public/img/analects.webp" alt="seneque">
+                </div>
+                <div class="div__txtlivre">
+                    <p class="livre__title">The Analects</p>
+                    <p class="livre__autor">James Legge</p>
+                    <p class="livre__date">1861</p>
+                    <a
+                        href="https://www.amazon.co.uk/Analects-Confucius/dp/B0B678X966/ref=sr_1_1_sspa?crid=34INTOWFB3QB2&keywords=confucius&qid=1704833617&sprefix=confu%2Caps%2C97&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+                            class="btn__vignette">LEARN MORE</a>
+                </div>
             </div>
+            <img class="fleche__frise" src="/public/icon/fleche.png" alt="">
 
             <div class="vignette__livre">
-                <img class="livre__img" src="/public/img/momentpresent.webp" alt="seneque">
-                <p class="livre__title">“Le pouvoir du moment présent”</p>
-                <p class="livre__autor">Eckhart Tolle</p>
-                <p class="livre__date">1997</p>
+                <div class="div__imglivre">
+                    <img class="livre__img" src="/public/img/alchemist.webp" alt="seneque">
+                </div>
+                <div class="div__txtlivre">
+                    <p class="livre__title">The Alchemist</p>
+                    <p class="livre__autor">Paulo Coelho</p>
+                    <p class="livre__date">1988</p>
+                    <a
+                        href="https://www.amazon.co.uk/ALCHEMIST-international-bestseller-Paulo-Coelho/dp/0722532938/ref=sr_1_2?crid=BRHJHMQH8P40&keywords=paulo+coelho&qid=1704833519&sprefix=paulo%2Caps%2C96&sr=8-2"
+                            class="btn__vignette">LEARN MORE</a>
+                </div>
             </div>
+            <img class="fleche__frise" src="/public/icon/fleche.png" alt="">
+
 
             <div class="vignette__livre">
-                <img class="livre__img" src="/public/img/confucius.webp" alt="seneque">
-                <p class="livre__title">“Le Bonheur selon confucius”</p>
-                <p class="livre__autor">Yu Dan</p>
-                <p class="livre__date">2009</p>
+                <div class="div__imglivre">
+                    <img class="livre__img" src="/public/img/powerofnow.webp" alt="seneque">
+                </div>
+                <div class="div__txtlivre">
+                    <p class="livre__title">Power of Now</p>
+                    <p class="livre__autor">Eckhart Tolle</p>
+                    <p class="livre__date">1997</p>
+                    <a
+                        href="https://www.amazon.co.uk/Power-of-Now/dp/B0095GVWMA/ref=sr_1_2?crid=35B4QJ5EZDNF2&keywords=the+power+of+now&qid=1704833383&sprefix=the+power%2Caps%2C95&sr=8-2"
+                            class="btn__vignette">LEARN MORE</a>
+                </div>
             </div>
+            
 
-            </section>
-            <section class="glossaire">
-                <h2 class="partie__title">GLOSSARY</h2>
-                <p class="glossaire__body"><strong>Cinephile :</strong> A cinephile is a person who has a 
-                    passion and deep love for cinema.</p>
-                
-                <p class="glossaire__body"><strong>A dystopia :</strong> A literary, cinematic, or artistic 
-                    genre that describes an imaginary society or a future world where living conditions 
-                    are extremely challenging.</p>
-                
-                <p class="glossaire__body"><strong>Eudaimonia :</strong> Term of Greek philosophical 
-                    origin, commonly translated as 'well-being' or 'complete happiness."</p>
-            </section>
-        </main>
-        <footer>
-            <div class="first__footer">
-                <ul>
-                    <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
-                    <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
-                    <li class="footer__item"><a class="footer__link" href="autresprojets.html">Other projects</a></li>
-                </ul>
+
+
+        </section>
+        <section class="glossaire">
+            <h2 class="partie__title">GLOSSARY</h2>
+            <p class="glossaire__body"><strong class="strong">Cinephile :</strong> A cinephile is a person who has a 
+                passion and deep love for cinema.</p>
+
+            <p class="glossaire__body"><strong class="strong">A dystopia :</strong> A literary, cinematic, or artistic 
+                genre that describes an imaginary society or a future world where living conditions 
+                are extremely challenging.</p>
+
+            <p class="glossaire__body"><strong class="strong">Eudaimonia :</strong> Term of Greek philosophical 
+                origin, commonly translated as 'well-being' or 'complete happiness."</p>
+        </section>
+    </main>
+    <footer>
+        <div class="first__footer">
+            <ul class="footer__liens">
+                <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
+                <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
+                <li class="footer__item"><a class="footer__link" href="projets.html">Other projects</a></li>
+            </ul>
+        </div>
+        <div class="second__footer">
+            <p class="footer__name">Maugan Robert A2</p>
+            <a class="footer__mail" href="mailto:">maugan.robert@edu.univ-fcomte.fr</a>
+            <p class="footer__info">Project carried out as part of an educational exercise in the department <a
+                    class="footer__sitemmi" href="https://mmimontbeliard.com/">MMi
+                    Montbéliard.</a></p>
+            <div class="logo__footer">
+                <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__insta" src="/public/icon/logo_insta.png" alt=""></a>
+                <a href="https://www.youtube.com/@departementmmi4128/videos"><img class="footer__youtube" src="/public/icon/logo_youtube.png" alt=""></a>
+                <a href="https://mmimontbeliard.com/"><img class="footer__mmi" src="/public/icon/logo_mmi.png" alt=""></a>
             </div>
-            <div class="second__footer">
-                <p class="footer__name">Maugan Robert A2</p>
-                <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-                <p class="footer__info">Project carried out as part of an educational exercise in the department <a class="footer__mmi" href="">MMi
-                        Montbéliard.</a></p>
-                <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
-                <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
-                <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
-            </div>
-        </footer>
-    </body>
-    </html>
+        </div>
+    </footer>
+</body>
+
+</html>

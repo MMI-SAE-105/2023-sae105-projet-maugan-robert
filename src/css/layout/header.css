@@ -24,7 +24,7 @@ header {
 .header__title {
     font-size: 28px;
     text-align: center;
-    color: var(--beige);
+    color: var(--blanc);
     font-family: var(--lora);
     order: 2;
 }
