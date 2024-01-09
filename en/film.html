@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{menuIsOpen:false}":class="{noscroll:menuIsOpen,}">
+<html lang="en" x-data="{menuIsOpen:false}" :class="{noscroll:menuIsOpen,}">
 
 <head>
     <meta charset="UTF-8">
@@ -7,52 +7,65 @@
     <title>Film</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Noto+Serif+Georgian:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Noto+Serif+Georgian:wght@200;300;400;500;600;700&display=swap');
+    </style>
 </head>
 
 <body>
     <header class="header header--home">
-        <a class="header__logo-link" href="/">
+
+        <a class="header__logo-link" href="/fr/index.html">
             <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
         </a>
-        <h1 class="header__title header__title--home">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/france.png" alt="logo__anglais">
+        <h1 class="header__title">MARKOREL</h1>
+        <div class="header__right">
+            <a class="logo__langue" href="/fr/index.html"><img src="/public/icon/france.png" alt="logo__anglais"></a>
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
-        </button>
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
                 <ul class="menu__ul">
-                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="film.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="citation.html">THE DREAM OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="replique.html">THE DREAM OF MARCUS AURELIUS</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">THE THOUGHTS OF MARCUS AURELIUS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">THE HANS ZIMMER'S MASTERCLASS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">THE HANS ZIMMER'S MASTERCLASS</a>
+                    </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
                     <li class="menu__item"><a class="menu__link" href="apropos.html">ABOUT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">OTHER PROJECTS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">OTHER PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <section class="article__header">
         <h1 class="big__title">GLADIATOR</h1>
         <h2 class="second__title">The timeless epic of cinema that still captivates today.</h2>
-        <p class="article__intro">Discover Ridley Scott's film 'Gladiator,' an epic masterpiece 
-            that immerses audiences in the heart of ancient Rome. With memorable battle scenes, 
-            exceptional performances, and profound themes, this cinema classic continues to 
-            inspire film enthusiasts worldwide.</p>
+            <p class="article__intro">Discover Ridley Scott's film 'Gladiator,' an epic masterpiece 
+                that immerses audiences in the heart of ancient Rome. With memorable battle scenes, 
+                exceptional performances, and profound themes, this cinema classic continues to 
+                inspire film enthusiasts worldwide.</p>
         <p class="blog">Published on 11/01 by Maugan ROBERT. Reading time : 2 min</p>
-        </section>
 
         <article class="article">
-            <img class="article__img" src="/public/img/film1.webp" alt="film1">
+            <figure><img class="article__img" src="/public/img/film1.webp" alt="film1">
+                <figcaption>Maximus</figcaption>
+            </figure>
             <h3 class="article__title">The Return to Ancient Rome</h3>
             <p class="article__body">Welcome to the arena of ancient Rome, 
                 where the Roman general Maximus Decimus Meridius, 
@@ -68,7 +81,9 @@
                 you in the heart of the action. The grandiose sets and sumptuous costumes 
                 accurately recreate the majestic atmosphere of ancient Rome.</p>
 
-                <img class="article__img" src="/public/img/film2.webp" alt="film2">
+            <figure><img class="article__img" src="/public/img/film2.webp" alt="film2">
+                <figcaption>Gladiator Fights</figcaption>
+            </figure>
             <h3 class="article__title">Unforgettable Performances</h3>
             <p class="article__body">Russell Crowe delivers an exceptional performance embodying 
                 Maximus, a character both charismatic and tragic. His desire for revenge and quest
@@ -77,18 +92,19 @@
                  portraying the cruel and disturbed antagonist.</p>
 
             <h3 class="article__title">An Enchanting Original Soundtrack</h3>
-            <p class="article__body"><a href="musique.html">The music</a> Composed by Hans Zimmer, 
+            <p class="article__body"><a class="lien__externe" href="musique.html">The music</a> Composed by Hans Zimmer, 
                 the music perfectly accompanies the on-screen action, reinforcing the emotions felt
                  by the audience. The epic melodies and powerful choirs contribute to creating an 
                  enchanting atmosphere that amplifies the emotional impact of each scene.</p>
 
-            <img class="article__img" src="/public/img/film3.webp" alt="film3">
+            <figure><img class="article__img" src="/public/img/film3.webp" alt="film3">
+                <figcaption>Maximus facing a tiger</figcaption>
+            </figure>
             <h3 class="article__title">Deep Themes</h3>
             <p class="article__body">"Gladiator" explores deep themes such as vengeance, 
                 courage, honor, and loyalty. It raises questions about destiny and 
                 redemption through personal sacrifice. These universal themes add 
                 a depth that sets "Gladiator" apart from many other Hollywood productions.</p>
-
             <h3 class="article__title">An Unmissable Epic</h3>
             <p class="article__body">In conclusion, 'Gladiator' is a 
                 cinematic masterpiece that skillfully blends spectacular 
@@ -100,44 +116,138 @@
                 epic and unforgettable cinematic adventure in the arena 
                 of ancient Rome. Don't miss the opportunity to (re)discover 
                 this film that continues to captivate audiences worldwide.</p>
-            </article>
+        </article>
         <section class="trailer">
             <h2 class="partie__title">MOVIE TRAILER</h2>
-            <video src="/public/video/"></video>
+            <video class="video" controls>
+                <source src="/public/video/videofilm.mp4" type="video/mp4" controls preload="auto">
+            </video>
         </section>
-        <section class="caroussel">
+        <section class="galerie">
             <h2 class="partie__title">RECOMMENDED MOVIES</h2>
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/alexander.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Alexander</p>
+                    <p class="rea__films">Olivier Stone</p>
+                    <p class="resume__films">This film explores the life of Alexander the Great, the conqueror of antiquity.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=51115.html" class="btn__vignette">LEARN MORE</a>
+            </div>
+            </div>
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/lastsamurai.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">The Last Samurai</p>
+                    <p class="rea__films">Edward Zwick</p>
+                    <p class="resume__films">Tom Cruise portrays an American soldier captured by samurais in 19th-century Japan.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=46943.html" class="btn__vignette">LEARN MORE</a>
+            </div>
+        </div>
+
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/benhur.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Ben-hur</p>
+                    <p class="rea__films">William Wyler</p>
+                    <p class="resume__films">This film tells the story of Judah Ben-Hur, a Jewish nobleman enslaved in ancient Rome.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=1532.html" class="btn__vignette">LEARN MORE</a>
+            </div>
+        </div>
+
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/300.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">300</p>
+                    <p class="rea__films">Zack Snyder</p>
+                    <p class="resume__films">This film recounts the Battle of Thermopylae, where 300 Spartans faced the Persian army.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=57529.html" class="btn__vignette">LEARN MORE</a>
+            </div>
+        </div>
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/kingdom.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Kingdom of Heaven</p>
+                    <p class="rea__films">Ridley Scott</p>
+                    <p class="resume__films">This film is set during the Crusades and follows a blacksmith (played by Orlando Bloom) who becomes a knight.</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=54205.html" class="btn__vignette">LEARN MORE</a>
+            </div>
+        </div>
+
+            <div class="galerie__films">
+                <div class="div__imggalerie">
+                    <img class="galerie__img" src="/public/img/troy.webp" alt="">
+                </div>
+                <div class="div__txtgalerie">
+                    <div>
+                    <p class="films__title">Troy</p>
+                    <p class="rea__films">Wolfang Petersen</p>
+                    <p class="resume__films">This film depicts the legendary battles of ancient Greece, with Brad Pitt in the role of Achilles</p>
+                </div>
+                <a href="https://www.allocine.fr/film/fichefilm_gen_cfilm=47357.html" class="btn__vignette">LEARN MORE</a>
+            </div>
+        </div>
         </section>
+
+            
         <section class="glossaire">
             <h2 class="partie__title">GLOSSARY</h2>
-            <p class="glossaire__body"><strong>Cinephile :</strong> A cinephile is a person who has a 
+            <p class="glossaire__body"><strong class="strong">Cinephile :</strong> A cinephile is a person who has a 
                 passion and deep love for cinema.</p>
-            
-            <p class="glossaire__body"><strong>A dystopia :</strong> A literary, cinematic, or artistic 
+
+            <p class="glossaire__body"><strong class="strong">A dystopia :</strong> A literary, cinematic, or artistic 
                 genre that describes an imaginary society or a future world where living conditions 
                 are extremely challenging.</p>
-            
-            <p class="glossaire__body"><strong>Eudaimonia :</strong> Term of Greek philosophical 
+
+            <p class="glossaire__body"><strong class="strong">Eudaimonia :</strong> Term of Greek philosophical 
                 origin, commonly translated as 'well-being' or 'complete happiness."</p>
         </section>
     </main>
     <footer>
         <div class="first__footer">
-            <ul>
+            <ul class="footer__liens">
                 <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
                 <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
-                <li class="footer__item"><a class="footer__link" href="autresprojets.html">Other projects</a></li>
+                <li class="footer__item"><a class="footer__link" href="projets.html">Other projects</a></li>
             </ul>
         </div>
         <div class="second__footer">
             <p class="footer__name">Maugan Robert A2</p>
-            <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-            <p class="footer__info">Project carried out as part of an educational exercise in the department <a class="footer__mmi" href="">MMi
+            <a class="footer__mail" href="mailto:">maugan.robert@edu.univ-fcomte.fr</a>
+            <p class="footer__info">Project carried out as part of an educational exercise in the department <a
+                    class="footer__sitemmi" href="https://mmimontbeliard.com/">MMi
                     Montbéliard.</a></p>
-            <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
-            <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
-            <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+            <div class="logo__footer">
+                <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__insta" src="/public/icon/logo_insta.png" alt=""></a>
+                <a href="https://www.youtube.com/@departementmmi4128/videos"><img class="footer__youtube" src="/public/icon/logo_youtube.png" alt=""></a>
+                <a href="https://mmimontbeliard.com/"><img class="footer__mmi" src="/public/icon/logo_mmi.png" alt=""></a>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>
