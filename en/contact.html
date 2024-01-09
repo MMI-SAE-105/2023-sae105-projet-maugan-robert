@@ -7,83 +7,94 @@
     <title>Contact</title>
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lora:wght@400;500;600;700&family=Noto+Serif+Georgian:wght@200;300;400;500;600;700&display=swap');
+        </style>
 </head>
-<body>
+<body class="contact__page">
     <header class="header header--home">
-        <a class="header__logo-link" href="/">
-            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite" />
-        </a>
-        <h1 class="header__title header__title--home">MARKOREL</h1>
-        <img class="logo__langue" src="/public/icon/france.png" alt="logo__anglais">
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
-            <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
-            <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/Icone_menu.png" alt="">
-        </button>
+        <a class="header__logo-link" href="/fr/index.html">
+            <img class="header__logo" src="/public/icon/logo_site.png" alt="logosite">
+        </a>
+        <h1 class="header__title">MARKOREL</h1>
+        <div class="header__right">
+            <a class="logo__langue" href="/fr/index.html"><img src="/public/icon/france.png" alt="logo__anglais"></a>
+
+            <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" class="header__menuBtn">
+                <img class="back__menu" x-show="menuIsOpen" src="/public/icon/icone_croix.png" alt="">
+                <img class="menu__burger" x-show="!menuIsOpen" src="/public/icon/logo_menu.png" alt="">
+            </button>
+        </div>
         <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.300ms class="menu">
             <div class="first__item">
                 <ul class="menu__ul">
-                    <li class="menu__item"><a class="menu__link" href="gladiator.html">GLADIATOR</a></li>
+                    <li class="menu__item"><a class="menu__link" href="film.html">GLADIATOR</a></li>
                     <li class="menu__item"><a class="menu__link" href="realisateur.html">RIDLEY SCOTT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="citation.html">THE DREAM OF MARCUS AURELIUS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="replique.html">THE DREAM OF MARCUS AURELIUS</a></li>
                     <li class="menu__item"><a class="menu__link" href="livre.html">THE THOUGHTS OF MARCUS AURELIUS</a></li>
-                    <li class="menu__item"><a class="menu__link" href="livre.html">THE HANS ZIMMER'S MASTERCLASS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="musique.html">THE HANS ZIMMER'S MASTERCLASS</a>
+                    </li>
                 </ul>
+                <span></span>
             </div>
             <div class="second__item">
                 <ul class="menu__ul">
                     <li class="menu__item"><a class="menu__link" href="contact.html">CONTACT</a></li>
                     <li class="menu__item"><a class="menu__link" href="apropos.html">ABOUT</a></li>
-                    <li class="menu__item"><a class="menu__link" href="autresprojets.html">OTHER PROJECTS</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projets.html">OTHER PROJECTS</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <section class="contact">
-        <h2>Contact Form</h2>
+        <h2 class="title__contact">Contact Form</h2>
     <div>
         <p class="label__title">First-name</p>
-        <input type="text" name="prenom" id="prenom" placeholder="Entrez votre prénom ici">
+        <input type="text" name="prenom" id="prenom" placeholder="Enter your first name">
       </div>
 
       <div>
         <p class="label__title">Name</p>
-        <input type="text" name="nom" id="nom" placeholder="Entrez votre nom ici">
+        <input type="text" name="nom" id="nom" placeholder="Enter your name">
       </div>
 
       <div>
         <p class="label__title">Mail</p>
-        <input type="text" name="e-mail" id="e-mail" placeholder="Entrez votre e-mail ici">
+        <input type="text" name="e-mail" id="e-mail" placeholder="Enter your mail">
       </div>
 
       <div>
         <p class="label__title">Object</p>
-        <input type="text" name="objet" id="objet" placeholder="Entrez l'objet du message ici">
+        <input type="text" name="objet" id="objet" placeholder="Enter the subject of the message.">
       </div>
 
       <div>
         <p class="label__title">Message</p>
-        <textarea id="message" name="message" rows="5" placeholder="Entrez votre message ici"></textarea>
+        <textarea id="message" name="message" rows="5" placeholder="Enter your message"></textarea>
       </div>
 
-      <button class="contact_btn">SEND</button>
+      <button class="contact__btn">SEND</button>
 </section>
 <footer>
     <div class="first__footer">
-        <ul>
+        <ul class="footer__liens">
             <li class="footer__item"><a class="footer__link" href="contact.html">Contact</a></li>
             <li class="footer__item"><a class="footer__link" href="apropos.html">About</a></li>
-            <li class="footer__item"><a class="footer__link" href="autresprojets.html">Other projects</a></li>
+            <li class="footer__item"><a class="footer__link" href="projets.html">Other projects</a></li>
         </ul>
     </div>
     <div class="second__footer">
         <p class="footer__name">Maugan Robert A2</p>
-        <a class="footer__mail" href="">maugan.robert@edu.univ-fcomte.fr</a>
-        <p class="footer__info">Project carried out as part of an educational exercise in the department <a class="footer__mmi" href="">MMi
+        <a class="footer__mail" href="mailto:">maugan.robert@edu.univ-fcomte.fr</a>
+        <p class="footer__info">Project carried out as part of an educational exercise in the department <a
+                class="footer__sitemmi" href="https://mmimontbeliard.com/">MMi
                 Montbéliard.</a></p>
-        <img class="footer__logo" src="/public/icon/logo_insta.png" alt="">
-        <img class="footer__logo" src="/public/icon/logo_youtube.png" alt="">
-        <img class="footer__logo" src="/public/icon/logo_mmi.png" alt="">
+        <div class="logo__footer">
+            <a href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__insta" src="/public/icon/logo_insta.png" alt=""></a>
+            <a href="https://www.youtube.com/@departementmmi4128/videos"><img class="footer__youtube" src="/public/icon/logo_youtube.png" alt=""></a>
+            <a href="https://mmimontbeliard.com/"><img class="footer__mmi" src="/public/icon/logo_mmi.png" alt=""></a>
+        </div>
     </div>
 </footer>
     
