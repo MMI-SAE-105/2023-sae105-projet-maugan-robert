@@ -24,7 +24,7 @@
 }
 
 .body__autresprojets {
-    background-color: var(--blanc);
+    background-color: var(--beige);
 }
 
 .vignette__txt{
@@ -39,7 +39,7 @@
 }
 
 .vignette__projet {
-    color: var(--beige);
+    color: var(--blanc);
     text-align: center;
     font-family: var(--georgia);
     font-size: 15px;
@@ -48,7 +48,7 @@
 }
 
 .vignette__nom {
-    color: var(--beige);
+    color: var(--blanc);
     text-align: center;
     font-family: var(--georgia);
     font-size: 15px;

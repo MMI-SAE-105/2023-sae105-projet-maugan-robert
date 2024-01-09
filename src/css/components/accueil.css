@@ -122,3 +122,9 @@ margin-right: 60px;
     transform: scale(1.3);
     opacity: 0.3;
 }
+
+q {
+    display: block;
+    justify-content: center;
+    align-items: center;
+}

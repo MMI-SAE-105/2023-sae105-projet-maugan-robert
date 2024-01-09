@@ -1,0 +1,81 @@
+.vignette__livre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;   
+}
+
+.livre__img {
+    display: block;
+    margin: auto;
+    width: 59%;
+    padding-top: 4%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+}
+
+.livre__title {
+    font-family: var(--lora);
+    font-size: 20px;
+    color: var(--beige) ;
+    font-weight: 500;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.div__txtlivre{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--noir);
+    padding: 2% 0% 2% 0%;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 59%;
+}
+
+.livre__autor{
+    color: var(--beige);
+    font-family: var(--georgia);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.livre__date {
+    color: var(--beige);
+    font-family: var(--georgia);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+
+.a__projets {
+    text-decoration: none;
+}
+
+.frise {
+    padding-bottom: 30px
+}
+
+.fleche__frise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.article__livre {
+    border-bottom : solid 1px var(--beige);
+    padding-bottom: 20px;
+}
