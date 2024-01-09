@@ -61,4 +61,8 @@
     text-decoration: none;
 }
 
-
+.txt__caroussel {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}

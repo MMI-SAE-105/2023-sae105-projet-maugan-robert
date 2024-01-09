@@ -35,12 +35,10 @@
    transform: translateY(-50%);
    width: 2rem;
    height: 2rem;
-   background: var(--gris-noir);
-   border-radius: 50%;
    border: none;
    display: grid;
    place-content: center;
-   color: #fff;
+   color: var(--blanc);
    }
 
    .carrousel_btn-avant {
@@ -56,7 +54,7 @@
        display: block; 
        width: 10px; 
        height: 10px; 
-       background-color: #000; 
+       background-color: var(--beige); 
        border-radius: 50%; 
        text-indent: -9999px;
        margin-bottom: var(--space2x);
@@ -78,7 +76,7 @@
        display: block;
        width: 10px; 
        height: 10px; 
-       background-color: gray;
+       background-color: var(--noir);
        border-radius: 50%; 
        text-indent: -9999px; 
    }
