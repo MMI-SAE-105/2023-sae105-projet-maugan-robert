@@ -13,3 +13,38 @@ img {
   height: auto;
 }
 
+.body__404 {
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+  height: 400vh;
+  margin: 0;
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  size: 200%;
+}
+
+.error__404 {
+  text-align: center;
+}
+
+.error__404 h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.error__404 p {
+  font-size: 24px;
+  color: var(--gris-noir);
+}
+
+.form__404 {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px; 
+}
+
+.btn__rechercher {
+  font-size: x-large;
+}
